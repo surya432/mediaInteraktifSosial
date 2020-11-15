@@ -12,8 +12,10 @@ class BoardTitleWidget extends StatelessWidget {
   final String widgetTitle;
   @override
   Widget build(BuildContext context) {
+    precacheImage(new AssetImage("assets/images/BG03-01.jpg"), Get.context);
+    precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
     return Container(
-      color: Colors.amberAccent,
+      // color: Colors.amberAccent,
       height: context.isTablet ? Get.height * 0.7 : Get.height * 0.8,
       child: Center(
           child: Stack(
@@ -22,8 +24,9 @@ class BoardTitleWidget extends StatelessWidget {
           Container(
             height: context.isTablet ? Get.height * 0.7 : Get.height * 0.8,
             padding: EdgeInsets.only(
-                left: 16,
+                left:16,
                 right: 16,
+                bottom: 16,
                 top: context.isTablet
                     ? Get.height * 0.1 / 2
                     : Get.height * 0.2 / 2),
@@ -37,7 +40,8 @@ class BoardTitleWidget extends StatelessWidget {
               alignment: Alignment.topCenter,
               child: Image.asset(
                 widgetTitle,
-                height: context.isTablet ? Get.height * 0.1 : Get.height * 0.2,
+                height:
+                    context.isTablet ? Get.height * 0.12 : Get.height * 0.22,
                 width: Get.width * 0.3,
               ),
             ),

@@ -7,7 +7,9 @@ class BoardBackground extends StatelessWidget {
   final Widget dataContent;
   @override
   Widget build(BuildContext context) {
-    var assetImage = new AssetImage("assets/images/BG03-01.jpg");
+    precacheImage(new AssetImage("assets/images/BG03-01.jpg"), Get.context);
+    precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
+    var assetImage = new AssetImage("assets/images/board-01.png");
     var boxDecoration = BoxDecoration(
       image: DecorationImage(
         image: assetImage,
@@ -17,10 +19,10 @@ class BoardBackground extends StatelessWidget {
     return Center(
       child: Container(
         decoration: boxDecoration,
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
         height: Get.height - context.mediaQueryPadding.top - 20,
-        width: Get.width * 0.9,
-        child: Center(child: dataContent),
+        width: Get.width * 0.8,
+        child: dataContent,
       ),
     );
   }

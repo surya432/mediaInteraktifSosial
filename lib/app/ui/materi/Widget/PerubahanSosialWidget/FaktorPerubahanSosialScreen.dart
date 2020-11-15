@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-class PetunjukPenggunaanScreen extends StatelessWidget {
-  const PetunjukPenggunaanScreen({Key key}) : super(key: key);
+class FaktorPerubahanSosialScreen extends StatelessWidget {
+  const FaktorPerubahanSosialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,34 +14,34 @@ class PetunjukPenggunaanScreen extends StatelessWidget {
       body: BGContainerWidget(
         kPaddingTop: context.mediaQueryPadding.top,
         content: BoardTitleWidget(
-          widgetTitle: "assets/menu/headtitle-23.png",
+          widgetTitle: "assets/button/btn-05.png",
           widgetContent: Container(
-            padding: EdgeInsets.all(16),
             child: Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+          child: Column(
+            children: [
+              Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    "Gunakan media interaktif ini untuk mempermudah proses pembelajaran Sosiologi materi PERUBAHAN SOSIAL DALAM MASYARAKAT, perhatikan seiap materi yang disajikan dan asah kemampuanmu di menu kuis sebahai bahan evaluasi.",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                      fontFamily: "Gothic",
-                    ),
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text(
-                    "Tombol yang dapat digunakan",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                      fontFamily: "Gothic",
-                    ),
-                  ),
+                  Expanded(
+                      child: GestureDetector(
+                    onTap: () =>
+                        Get.toNamed("/FAKTORINTERNALPERUBAHANSOSIAL"),
+                    child: Image.asset("assets/button/btn-05.png",
+                        height: Get.height * .1, width: Get.height * .1),
+                  )),
+                  Expanded(
+                      child: GestureDetector(
+                    onTap: () =>
+                        Get.toNamed("/FAKTOREXTERNALPERUBAHANSOSIAL"),
+                    child: Image.asset("assets/button/btn-05.png",
+                        height: Get.height * .1, width: Get.height * .1),
+                  )),
                 ],
               ),
+              Spacer(),
+            ],
+          ),
             ),
           ),
         ),

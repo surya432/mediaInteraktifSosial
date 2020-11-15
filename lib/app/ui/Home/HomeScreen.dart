@@ -12,6 +12,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
+  void initState() {
+    precacheImage(new AssetImage("assets/images/BG03-01.jpg"), Get.context);
+    precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
+    super.initState();
+  }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: BGContainerWidget(
@@ -72,6 +78,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(width: 8),
                     GestureDetector(
+                      onTap: () =>
+                          Get.toNamed("/MATERI"),
                       child: Image.asset(
                         "assets/button/btn-01.png",
                         height: Get.height * .15,

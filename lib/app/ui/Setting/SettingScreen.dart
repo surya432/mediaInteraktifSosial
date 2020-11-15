@@ -7,7 +7,6 @@ import 'package:mediaintersosial/app/ui/Setting/TujuanScreen.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-
 class SettingScreen extends StatefulWidget {
   SettingScreen({Key key}) : super(key: key);
 
@@ -17,33 +16,32 @@ class SettingScreen extends StatefulWidget {
 
 var menuList = [
   {
-    "images": "assets/Icon/button-14.png",
+    "images": "assets/menu/headtitle-21.png",
     "route": KopetensiDasarScreen(),
     "name": "Kopetensi Dasar"
   },
   {
-    "images": "assets/Icon/button-15.png",
+    "images": "assets/menu/headtitle-16.png",
     "route": TujuanScreen(),
     "name": "Tujuan"
   },
   {
-    "images": "assets/Icon/button-16.png",
+    "images": "assets/menu/headtitle-22.png",
     "route": PetunjukPenggunaanScreen(),
     "name": "Petunjuk Pengunaan"
   },
   {
-    "images": "assets/Icon/button-17.png",
+    "images": "assets/menu/headtitle-23.png",
     "route": PengembangScreen(),
     "name": "Profil Pengembang"
   },
 ];
 
-
 class _SettingScreenState extends State<SettingScreen> {
   @override
   void initState() {
-    
-
+    precacheImage(new AssetImage("assets/images/BG03-01.jpg"), Get.context);
+    precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
     super.initState();
   }
 
@@ -53,67 +51,94 @@ class _SettingScreenState extends State<SettingScreen> {
       body: BGContainerWidget(
         kPaddingTop: context.mediaQueryPadding.top,
         content: BoardTitleWidget(
-          widgetContent: Center(
-            child: Column(
-              children: [
-                Spacer(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                      flex: 1,
-                      child: GestureDetector(
-                        onTap: () => Get.to(menuList[0]['route'],
-                            transition: Transition.cupertinoDialog,
-                            duration: Duration(milliseconds: 700)),
-                        child: Container(
-                            child: Image.asset(menuList[0]['images'],
-                                height: Get.height * .1, width: Get.height * .1)),
+          widgetContent: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Center(
+              child: Column(
+                children: [
+                  Spacer(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () => Get.to(menuList[0]['route'],
+                                transition: Transition.cupertinoDialog,
+                                duration: Duration(milliseconds: 700)),
+                            child: Container(
+                                child: Image.asset(menuList[0]['images'],
+                                    height: Get.height * .1,
+                                    width: Get.width * .1)),
+                          ),
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: GestureDetector(
-                        onTap: () => Get.to(menuList[1]['route'],
-                            transition: Transition.zoom,
-                            duration: Duration(milliseconds: 700)),
-                        child: Image.asset(menuList[1]['images'],
-                            height: Get.height * .1, width: Get.height * .1),
+                      SizedBox(
+                        height: context.isTablet
+                            ? Get.height * 0.1 / 2
+                            : Get.height * 0.2 / 2,
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: Get.height * 0.05,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () => Get.to(menuList[2]['route'],
-                            transition: Transition.cupertinoDialog,
-                            duration: Duration(milliseconds: 700)),
-                        child: Image.asset(menuList[2]['images'],
-                            height: Get.height * .1, width: Get.height * .1),
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () => Get.to(menuList[1]['route'],
+                                transition: Transition.zoom,
+                                duration: Duration(milliseconds: 700)),
+                            child: Image.asset(menuList[1]['images'],
+                                height: Get.height * .1, width: Get.width * .1),
+                          ),
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () => Get.to(menuList[3]['route'],
-                            transition: Transition.cupertinoDialog,
-                            duration: Duration(milliseconds: 700)),
-                        child: Image.asset(menuList[3]['images'],
-                            height: Get.height * .1, width: Get.height * .1),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () => Get.to(menuList[2]['route'],
+                                transition: Transition.cupertinoDialog,
+                                duration: Duration(milliseconds: 700)),
+                            child: Image.asset(menuList[2]['images'],
+                                height: Get.height * .1, width: Get.width * .1),
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                Spacer(),
-              ],
+                      SizedBox(
+                        height: context.isTablet
+                            ? Get.height * 0.1 / 2
+                            : Get.height * 0.2 / 2,
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () => Get.to(menuList[3]['route'],
+                                transition: Transition.cupertinoDialog,
+                                duration: Duration(milliseconds: 700)),
+                            child: Image.asset(menuList[3]['images'],
+                                height: Get.height * .1,
+                                width: Get.height * .1),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                ],
+              ),
             ),
           ),
-          widgetTitle: "assets/button/btn-07.png",
+          widgetTitle: "assets/menu/headtitle-18.png",
         ),
         custombar: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

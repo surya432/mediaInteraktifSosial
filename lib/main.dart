@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/SplashScreen/SplashScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/MateriScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorExternalPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorInternalPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/ProsesPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/binding/MateriBinding.dart';
+import 'package:mediaintersosial/app/ui/materi/binding/PerubahanSosialBinding.dart';
 
 void main() {
   ByteDataAssets.instance.basePath = 'assets/images/';
@@ -20,13 +26,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    precacheImage(AssetImage("assets/images/BG02-01.jpg"), context);
-
     return GetMaterialApp(
       enableLog: true,
       debugShowCheckedModeBanner: false,
-      defaultTransition: Transition.zoom,
-      // transitionDuration: new Duration(milliseconds: 1000),
+      defaultTransition: Transition.rightToLeft,
+      transitionDuration: new Duration(milliseconds: 1000),
       title: 'Flutter Demo',
       theme: buildThemeData(context),
       // theme: ThemeData.dark(),
@@ -35,8 +39,27 @@ class MyApp extends StatelessWidget {
       getPages: [
         //Simple GetPage
         GetPage(name: '/SPLASH', page: () => SplashScreen()),
+        GetPage(
+          name: '/MATERI',
+          page: () => MateriScreen(),
+          binding: MateriBinding(),
+        ),
+        GetPage(
+          name: '/PROSESPERUBAHANSOSIAL',
+          page: () => ProsesPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/FAKTORINTERNALPERUBAHANSOSIAL',
+          page: () => FaktorInternalPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/FAKTOREXTERNALPERUBAHANSOSIAL',
+          page: () => FaktorExternalPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        )
         // GetPage with custom transitions and bindings
-        
       ],
     );
   }

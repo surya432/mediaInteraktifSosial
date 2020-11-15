@@ -15,6 +15,8 @@ class _SplashScreenState extends State<SplashScreen>
   Animation<double> animation;
   @override
   void initState() {
+    precacheImage(new AssetImage("assets/images/BG03-01.jpg"), Get.context);
+    precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
     super.initState();
     controller = AnimationController(
         duration: const Duration(milliseconds: 3000), vsync: this);
