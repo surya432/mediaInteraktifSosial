@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+     "compounds": [
+        {
+            "name": "Flutter-All",
+            "configurations": ["mediaintersosial2", "mediaintersosial"],
+        }
+    ],
+    "configurations": [
+       
+        {
+            "name": "mediaintersosial2",
+            "request": "launch",
+            "type": "dart",
+            "deviceId":"TSVGDYKNAIS8FAFY",
+        },
+
+        {
+            "name": "mediaintersosial",
+            "request": "launch",
+            "type": "dart",
+            "deviceId":"f7a5d582",
+        }
+    ]
+}
