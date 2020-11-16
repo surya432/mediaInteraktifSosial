@@ -4,8 +4,8 @@ import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialControl
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
-  const FaktorExternalPerubahanSosialScreen({Key key}) : super(key: key);
+class TeoriPerubahanSosialScreen extends StatelessWidget {
+  const TeoriPerubahanSosialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
         child: GetX<PerubahanSosialController>(
             init: PerubahanSosialController(),
             initState: (state) => Get.find<PerubahanSosialController>()
-                .initFaktorExternalPerubahanSosial(),
+                .initTeoriPerubahanSosial(),
             builder: (PerubahanSosialController controller) {
               return BGContainerWidget(
                 kPaddingTop: context.mediaQueryPadding.top,
@@ -93,19 +93,19 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial1({Key key}) : super(key: key);
+class WidgetTeoriPerubahanSosial1 extends StatelessWidget {
+  const WidgetTeoriPerubahanSosial1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Perubahan lingkungan fisik",
+              "1. Teori Evolusi",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -115,7 +115,49 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Perubahan yang disebabkan oleh lingkungan alam fisik berupa bencana alam seperti banjir, gunung meletus, gempa bumi, angin topan, dan juga disebabkan tindakan manusia yang tidak terkontrol sehingga merusak lingkungan, seperti penebangan hutan secara liar yang menyebabkan bencana tanah longsor.",
+              "Teori evolusi menjelaskan bahwa perubahan sosial terjadi secara lambat untuk waktu yang lama dalam masyarakat. Menurut teori ini perubahan sosial terjadi karena perubahan pada cara peng-organisasian masyarakat, sistem kerja, pola pemikiran dan perkembangan sosial. Perubahan sosial dalam teori evolusi jarang menimbulkan konflik karena perubahannya berlangsung lambat dan cenderung tidak disadari.",
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+                fontFamily: "Gothic",
+              ),
+              textAlign: TextAlign.justify,
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Image.asset("assets/images/teoripenghambat1.png",
+                  height: Get.height * .5, width: Get.width * .5),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class WidgetTeoriPerubahanSosial2 extends StatelessWidget {
+  const WidgetTeoriPerubahanSosial2({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "2. Teori Konflik",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+                fontFamily: "Gothic",
+              ),
+              textAlign: TextAlign.justify,
+            ),
+            SizedBox(height: 16),
+            Text(
+              "Teori konflik merupakan perubahan sosial terbentuk karena adanya konflik dan ketegangan dalam masyarakat. Konflik ini biasanya berupa pertentangan antar kelas penguasa dengan masyarakat yang tertindas sehingga masyarakat dalam kelas yang lebih rendah menginginkan adanya perubahan dengan mengatasnamakan keadilan. Berdasarkan teori ini, jika memang perubahan yang dikehendaki berhasil tercapai, maka pada akhirnya masyarakat yang terbentuk akan hidup tanpa pembagian kelas.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
@@ -130,19 +172,19 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial2({Key key}) : super(key: key);
+class WidgetTeoriPerubahanSosial3 extends StatelessWidget {
+  const WidgetTeoriPerubahanSosial3({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Masuknya kebudayaan dari masyarakat lain",
+              "3. Teori Fungsionalis",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -152,7 +194,7 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Masuknya pengaruh kebudayaan masyarakat lain terjadi karena hubungan fisik antara dua masyarakat, yang diikuti adanya pengaruh timbal balik sehingga setiap masyarakat akan mengalami perubahan. Masuknya pengaruh kebudayaan masyarakat lain juga terjadi secara sepihak, misalnya melalui media massa (siaran TV), masyarakat pemirsa siaran TV dapat terpengaruh oleh siaran yang ditayangkan",
+              "Teori Fungsionalis menyatakan tentang ketidakpuasan masyarakat terhadap keadaan sosial yang sedang berlangsung menjadi penyebab utama terjadinya perubahan sosial. Ketidakpuasan ini tidak dirasakan oleh semua anggota masyarakat, sebagian anggota masyarakat tidak menginginkan perubahan. Apabila lebih banyak yang menginginkan perubahan biasanya perubahan akan terjadi, tetapi apabila hanya kelompok minoritas dengan kekuatan kecil yang menginginkan perubahan, maka perubahan tersebut sulit untuk tercapai.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
@@ -167,19 +209,19 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial3({Key key}) : super(key: key);
+class WidgetTeoriPerubahanSosial4 extends StatelessWidget {
+  const WidgetTeoriPerubahanSosial4({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Terjandinya peperangan",
+              "4. Teori Siklus",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -189,13 +231,17 @@ class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Terjadinya peperangan antar negara dapat mengakibatkan perubahan bagi negara yang mengalami kekalahan, karena negara yang kalah akan menjadi negara terjajah dan harus mengikuti pola kehidupan politik baru sesuai dengan kehendak negara yang memenangkan peperangan tersebut. Karena negara yang menang biasanya akan memaksakan kehendaknya pada negara yang kalah.",
+              "Teori siklus menyatakan bahwa perubahan sosial ini bagaikan roda yang sedang berputar, artinya perubahan zamam merupakan sesuatu yang tidak dapat dihindari oleh manusia dan tidak dapat dikendalikan oleh siapapun. Bagaimanapun seseorang berusahan untuk mencegah terjadinya perubahan sosial mereka tidak akan mampu, karena perubahan sosial sudah seperti sifat alami yang dimiliki setiap lingkungan masyarakat.\n",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
               textAlign: TextAlign.justify,
+            ),  Align(
+              alignment: Alignment.center,
+              child: Image.asset("assets/images/teoripenghambat2.png",
+                  height: Get.height * .5, width: Get.width * .5),
             ),
           ],
         ),

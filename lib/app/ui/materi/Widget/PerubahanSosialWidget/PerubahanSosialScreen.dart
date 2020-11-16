@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
@@ -41,25 +41,25 @@ class PerubahanSosialScreen extends StatelessWidget {
                   ),
                   SizedBox(height: Get.height * .02),
                   GestureDetector(
-                    // onTap: () => Get.back(),
+                    onTap: () => Get.toNamed("/FAKTORPENDORONGPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
                         height: Get.height * .1, width: Get.height * .1),
                   ),
                   SizedBox(height: Get.height * .02),
                   GestureDetector(
-                    // onTap: () => Get.back(),
+                    onTap: () => Get.toNamed("/FAKTORPENHAMBATPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
                         height: Get.height * .1, width: Get.height * .1),
                   ),
                   SizedBox(height: Get.height * .02),
                   GestureDetector(
-                    // onTap: () => Get.back(),
+                    onTap: () => Get.toNamed("/AGENPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
                         height: Get.height * .1, width: Get.height * .1),
                   ),
                   SizedBox(height: Get.height * .02),
                   GestureDetector(
-                    // onTap: () => Get.back(),
+                    onTap: () => Get.toNamed("/TEORIPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
                         height: Get.height * .1, width: Get.height * .1),
                   ),

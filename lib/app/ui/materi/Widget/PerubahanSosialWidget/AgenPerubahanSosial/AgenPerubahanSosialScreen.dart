@@ -4,8 +4,8 @@ import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialControl
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
-  const FaktorExternalPerubahanSosialScreen({Key key}) : super(key: key);
+class AgenPerubahanSosialScreen extends StatelessWidget {
+  const AgenPerubahanSosialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
         child: GetX<PerubahanSosialController>(
             init: PerubahanSosialController(),
             initState: (state) => Get.find<PerubahanSosialController>()
-                .initFaktorExternalPerubahanSosial(),
+                .initAgenPerubahanSosialPerubahanSosial(),
             builder: (PerubahanSosialController controller) {
               return BGContainerWidget(
                 kPaddingTop: context.mediaQueryPadding.top,
@@ -93,29 +93,18 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial1({Key key}) : super(key: key);
+class WidgetAgenPerubahanSosial1 extends StatelessWidget {
+  const WidgetAgenPerubahanSosial1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Perubahan lingkungan fisik",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 16),
-            Text(
-              "Perubahan yang disebabkan oleh lingkungan alam fisik berupa bencana alam seperti banjir, gunung meletus, gempa bumi, angin topan, dan juga disebabkan tindakan manusia yang tidak terkontrol sehingga merusak lingkungan, seperti penebangan hutan secara liar yang menyebabkan bencana tanah longsor.",
+              "Agen perubahan sosial (agent of change) merupakan orang atau pihak yang memelopori. merencanakan, dan melaksanakan perubahan sosial. Agen perubahan sosial memiliki beragam peran, yaitu:\n",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
@@ -123,43 +112,18 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
               ),
               textAlign: TextAlign.justify,
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial2({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return  SingleChildScrollView(
-      child: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
             Text(
-              "Masuknya kebudayaan dari masyarakat lain",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 16),
-            Text(
-              "Masuknya pengaruh kebudayaan masyarakat lain terjadi karena hubungan fisik antara dua masyarakat, yang diikuti adanya pengaruh timbal balik sehingga setiap masyarakat akan mengalami perubahan. Masuknya pengaruh kebudayaan masyarakat lain juga terjadi secara sepihak, misalnya melalui media massa (siaran TV), masyarakat pemirsa siaran TV dapat terpengaruh oleh siaran yang ditayangkan",
+              "a. Sebagai katalisator\n" +
+                  "b. Sebagai pemberi solusi dalam pemecahan masalah sosial. \n" +
+                  "c. Sebagai pembantu proses perubahan\n" +
+                  "d. Sebagai penghubung (linker)",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
-              textAlign: TextAlign.justify,
-            ),
+              textAlign: TextAlign.left,
+            )
           ],
         ),
       ),
@@ -167,29 +131,18 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial3({Key key}) : super(key: key);
+class WidgetAgenPerubahanSosial2 extends StatelessWidget {
+  const WidgetAgenPerubahanSosial2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Terjandinya peperangan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 16),
-            Text(
-              "Terjadinya peperangan antar negara dapat mengakibatkan perubahan bagi negara yang mengalami kekalahan, karena negara yang kalah akan menjadi negara terjajah dan harus mengikuti pola kehidupan politik baru sesuai dengan kehendak negara yang memenangkan peperangan tersebut. Karena negara yang menang biasanya akan memaksakan kehendaknya pada negara yang kalah.",
+              "Agen perubahan sosial cenderung memegang kendali perencanaan, pelaksanaan, dan evaluasi perubahan sosial yang dikehendaki. Melalui perubahan sosial yang dikehendaki, kehidupan masyarakat menjadi lebih maju dan kesejahteraan masyarakat meningkat.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,

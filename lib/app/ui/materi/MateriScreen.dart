@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/PerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/controller/MateriController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
@@ -136,7 +137,7 @@ class WidgetMateri2 extends StatelessWidget {
                 )),
                 Expanded(
                     child: GestureDetector(
-                  // onTap: () => Get.back(),
+                  onTap: () => Get.to(DampakPerubahanSosialScreen()),
                   child: Image.asset("assets/button/btn-05.png",
                       height: Get.height * .1, width: Get.height * .1),
                 )),
@@ -145,7 +146,6 @@ class WidgetMateri2 extends StatelessWidget {
             Spacer(),
             Expanded(
                 child: GestureDetector(
-              // onTap: () => Get.back(),
               child: Image.asset("assets/button/btn-05.png",
                   height: Get.height * .1, width: Get.height * .1),
             )),

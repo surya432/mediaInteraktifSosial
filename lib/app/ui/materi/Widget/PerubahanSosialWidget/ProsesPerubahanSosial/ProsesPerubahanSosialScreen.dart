@@ -101,6 +101,8 @@ class WidgetperubahanSosial1 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "ASIMILASI",
@@ -148,6 +150,8 @@ class WidgetperubahanSosial2 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Difusi",
@@ -183,6 +187,8 @@ class WidgetperubahanSosial3 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Akulturasi",

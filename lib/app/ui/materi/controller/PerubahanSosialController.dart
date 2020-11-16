@@ -1,7 +1,16 @@
 import 'package:get/get.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/AgenPerubahanSosial/AgenPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPendorongPerubahanSosial/FaktorPendorongPerubahanSosial.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPenghambat/FaktorPenghambatScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorExternalPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorInternalPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/ProsesPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/ProsesPerubahanSosial/ProsesPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/TeoriPerubahanSosial/TeoriPerubahanSosialScreen.dart';
 
 class PerubahanSosialController extends GetxController {
   var menuList = List<Map<dynamic, dynamic>>().obs;
@@ -10,6 +19,8 @@ class PerubahanSosialController extends GetxController {
   increment() => pageIndex.value++;
 
   void onInit() {
+    pageIndex.value = 0;
+    menuList.clear();
     super.onInit();
   }
 
@@ -17,18 +28,9 @@ class PerubahanSosialController extends GetxController {
     pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
-      {
-        "route": WidgetperubahanSosial1(),
-        "images": "assets/button/btn-05.png"
-      },
-      {
-        "route": WidgetperubahanSosial2(),
-        "images": "assets/button/btn-05.png"
-      },
-      {
-        "route": WidgetperubahanSosial3(),
-        "images": "assets/button/btn-05.png"
-      },
+      {"route": WidgetperubahanSosial1(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetperubahanSosial2(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetperubahanSosial3(), "images": "assets/button/btn-05.png"},
     ]);
   }
 
@@ -73,4 +75,153 @@ class PerubahanSosialController extends GetxController {
       },
     ]);
   }
+
+  initFaktorPendorongPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {"route": WidgetFaktorPendorong1(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong2(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong3(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong4(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong6(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong7(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong8(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetFaktorPendorong9(), "images": "assets/button/btn-05.png"},
+    ]);
+  }
+
+  initFaktorPenghambatPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetFaktorPenghambat1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat2(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat3(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat4(),
+        "images": "assets/button/btn-05.png"
+      },
+    ]);
+  }
+
+  initAgenPerubahanSosialPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetAgenPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetAgenPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      },
+    ]);
+  }
+
+  initTeoriPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetTeoriPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetTeoriPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetTeoriPerubahanSosial3(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetTeoriPerubahanSosial4(),
+        "images": "assets/button/btn-05.png"
+      },
+    ]);
+  }
+
+  initUkuranPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetUkuranPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetUkuranPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      }
+    ]);
+  }
+
+  initKecepatanPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetKecepatanPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetKecepatanPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      }
+    ]);
+  }
+
+  initSifatPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetSifatPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetSifatPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      }
+    ]);
+  }
+
+  initArahPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetArahPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetArahPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      }
+    ]);
+  }
+
+  initProsesnyaPerubahanSosial() { pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {
+        "route": WidgetProsesnyaPerubahanSosial1(),
+        "images": "assets/button/btn-05.png"
+      },
+      {
+        "route": WidgetProsesnyaPerubahanSosial2(),
+        "images": "assets/button/btn-05.png"
+      }
+    ]);}
 }

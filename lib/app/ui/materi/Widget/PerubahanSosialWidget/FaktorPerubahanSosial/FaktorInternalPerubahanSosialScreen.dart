@@ -101,6 +101,8 @@ class WidgetFaktorInternalPerubahanSosial1 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Penemuan baru",
@@ -121,8 +123,13 @@ class WidgetFaktorInternalPerubahanSosial1 extends StatelessWidget {
               ),
               textAlign: TextAlign.justify,
             ),
-            Image.asset("assets/images/faktorInternalperubahanSosial1.jpg",
-                height: Get.height * .5, width: Get.width * .5),
+            Align(
+              alignment: Alignment.center,
+              child: Image.asset(
+                  "assets/images/faktorInternalperubahanSosial1.jpg",
+                  height: Get.height * .5,
+                  width: Get.width * .5),
+            ),
             Text(
               "Sulitnya mendapatkan air di daerah pegunungan, masyarakat menciptakan tempat penampungan dan mengalirkan dengan selang kerumah warga.",
               style: TextStyle(
@@ -147,6 +154,8 @@ class WidgetFaktorInternalPerubahanSosial2 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Demografi (perubahan jumlah penduduk)",
@@ -182,6 +191,8 @@ class WidgetFaktorInternalPerubahanSosial3 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Konflik atau pertentangan dalam masyarakat",
@@ -193,11 +204,21 @@ class WidgetFaktorInternalPerubahanSosial3 extends StatelessWidget {
               textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
-            Image.asset("assets/images/faktorInternalperubahanSosial2.jpg",
-                height: Get.height * .5, width: Get.width * .5),
+            Align(
+              alignment: Alignment.center,
+              child: Image.asset(
+                  "assets/images/faktorInternalperubahanSosial2.jpg",
+                  height: Get.height * .5,
+                  width: Get.width * .5),
+            ),
             SizedBox(height: 16),
-            Image.asset("assets/images/faktorInternalperubahanSosial3.jpg",
-                height: Get.height * .5, width: Get.width * .5),
+            Align(
+              alignment: Alignment.center,
+              child: Image.asset(
+                  "assets/images/faktorInternalperubahanSosial3.jpg",
+                  height: Get.height * .5,
+                  width: Get.width * .5),
+            ),
             Text(
               "Konflik penolakan RUU Omnibus Law merupakan interaksi sosial yang menjadi penyebab terjadinya perubahan sosial. Konflik atau pertentangan biasa terjadi antar individu dengan kelompok, maupun kelompok dengan kelompok. ",
               style: TextStyle(
@@ -222,6 +243,8 @@ class WidgetFaktorInternalPerubahanSosial4 extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Pemberontakan/ Revolusi",

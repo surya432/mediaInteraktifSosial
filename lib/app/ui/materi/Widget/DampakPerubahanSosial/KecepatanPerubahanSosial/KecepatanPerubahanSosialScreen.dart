@@ -4,8 +4,8 @@ import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialControl
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
-  const FaktorExternalPerubahanSosialScreen({Key key}) : super(key: key);
+class KecepatanPerubahanSosialScreen extends StatelessWidget {
+  const KecepatanPerubahanSosialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
         child: GetX<PerubahanSosialController>(
             init: PerubahanSosialController(),
             initState: (state) => Get.find<PerubahanSosialController>()
-                .initFaktorExternalPerubahanSosial(),
+                .initKecepatanPerubahanSosial(),
             builder: (PerubahanSosialController controller) {
               return BGContainerWidget(
                 kPaddingTop: context.mediaQueryPadding.top,
@@ -93,19 +93,19 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial1({Key key}) : super(key: key);
+class WidgetKecepatanPerubahanSosial1 extends StatelessWidget {
+  const WidgetKecepatanPerubahanSosial1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Perubahan lingkungan fisik",
+              "Evolusi (perubahan secara lambat)",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -115,7 +115,7 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Perubahan yang disebabkan oleh lingkungan alam fisik berupa bencana alam seperti banjir, gunung meletus, gempa bumi, angin topan, dan juga disebabkan tindakan manusia yang tidak terkontrol sehingga merusak lingkungan, seperti penebangan hutan secara liar yang menyebabkan bencana tanah longsor.",
+              "Perubahan evolusi merupakan perubahan yang lama dengan diikuti perubahan kecil. Pada evolusi, perubahan yang terjadi tanpa ada tekanan atau terjadi dengan sendirinya, kenapa? Karena masyarakat biasanya selalu berusaha menyesuaikan diri dengan keadaan atau kondisi yang baru timbul di lingkungannya. Seperti perubahan dari masyarakat tradisional ke modern.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
@@ -123,6 +123,7 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
               ),
               textAlign: TextAlign.justify,
             ),
+           
           ],
         ),
       ),
@@ -130,19 +131,19 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial2({Key key}) : super(key: key);
+class WidgetKecepatanPerubahanSosial2 extends StatelessWidget {
+  const WidgetKecepatanPerubahanSosial2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Masuknya kebudayaan dari masyarakat lain",
+              "Revolusi (perubahan secara cepat)",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -152,44 +153,7 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Masuknya pengaruh kebudayaan masyarakat lain terjadi karena hubungan fisik antara dua masyarakat, yang diikuti adanya pengaruh timbal balik sehingga setiap masyarakat akan mengalami perubahan. Masuknya pengaruh kebudayaan masyarakat lain juga terjadi secara sepihak, misalnya melalui media massa (siaran TV), masyarakat pemirsa siaran TV dapat terpengaruh oleh siaran yang ditayangkan",
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial3({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return  SingleChildScrollView(
-      child: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Terjandinya peperangan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 16),
-            Text(
-              "Terjadinya peperangan antar negara dapat mengakibatkan perubahan bagi negara yang mengalami kekalahan, karena negara yang kalah akan menjadi negara terjajah dan harus mengikuti pola kehidupan politik baru sesuai dengan kehendak negara yang memenangkan peperangan tersebut. Karena negara yang menang biasanya akan memaksakan kehendaknya pada negara yang kalah.",
+              "Perubahan revolusi merupakan perubahan yang terjadi secara cepat dalam dasar atau sendi-sendir pokok yang terdapat dalam masyarakat. Peubahan ini dapat direncanakan terlebih dahulu dan biasanya harus ada pemimpin kelompok masyarakat. Seperti revolusi industry yang berkembang pesat. ",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,

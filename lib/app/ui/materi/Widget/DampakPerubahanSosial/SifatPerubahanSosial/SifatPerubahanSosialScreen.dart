@@ -4,8 +4,8 @@ import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialControl
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 
-class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
-  const FaktorExternalPerubahanSosialScreen({Key key}) : super(key: key);
+class SifatPerubahanSosialScreen extends StatelessWidget {
+  const SifatPerubahanSosialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
         child: GetX<PerubahanSosialController>(
             init: PerubahanSosialController(),
             initState: (state) => Get.find<PerubahanSosialController>()
-                .initFaktorExternalPerubahanSosial(),
+                .initSifatPerubahanSosial(),
             builder: (PerubahanSosialController controller) {
               return BGContainerWidget(
                 kPaddingTop: context.mediaQueryPadding.top,
@@ -93,19 +93,19 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial1({Key key}) : super(key: key);
+class WidgetSifatPerubahanSosial1 extends StatelessWidget {
+  const WidgetSifatPerubahanSosial1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Perubahan lingkungan fisik",
+              "Perubahan Struktural",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -115,7 +115,7 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Perubahan yang disebabkan oleh lingkungan alam fisik berupa bencana alam seperti banjir, gunung meletus, gempa bumi, angin topan, dan juga disebabkan tindakan manusia yang tidak terkontrol sehingga merusak lingkungan, seperti penebangan hutan secara liar yang menyebabkan bencana tanah longsor.",
+              "Perubahan struktural merupakan perubahan yang bersifat mendasar sehingga menyebabkan reorganisasi atau tata ulang struktur dalam masyarakat. Perubahan struktural merupakan suatu proses sosial yang mampu menciptakan dan menghasilkan perubahan pada hubungan sosial yang terorganisasi dalam suatu lembaga kemasyarakatan dan melibatkan anggota masyarakat, seperti perubahan sistem dan struktur pemerintahan negara.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
@@ -123,6 +123,7 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
               ),
               textAlign: TextAlign.justify,
             ),
+           
           ],
         ),
       ),
@@ -130,19 +131,19 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
   }
 }
 
-class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial2({Key key}) : super(key: key);
+class WidgetSifatPerubahanSosial2 extends StatelessWidget {
+  const WidgetSifatPerubahanSosial2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Masuknya kebudayaan dari masyarakat lain",
+              "Perubahan proses (tidak mendasar)",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -152,44 +153,7 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              "Masuknya pengaruh kebudayaan masyarakat lain terjadi karena hubungan fisik antara dua masyarakat, yang diikuti adanya pengaruh timbal balik sehingga setiap masyarakat akan mengalami perubahan. Masuknya pengaruh kebudayaan masyarakat lain juga terjadi secara sepihak, misalnya melalui media massa (siaran TV), masyarakat pemirsa siaran TV dapat terpengaruh oleh siaran yang ditayangkan",
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
-  const WidgetFaktorExternalPerubahanSosial3({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return  SingleChildScrollView(
-      child: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Terjandinya peperangan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
-              ),
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 16),
-            Text(
-              "Terjadinya peperangan antar negara dapat mengakibatkan perubahan bagi negara yang mengalami kekalahan, karena negara yang kalah akan menjadi negara terjajah dan harus mengikuti pola kehidupan politik baru sesuai dengan kehendak negara yang memenangkan peperangan tersebut. Karena negara yang menang biasanya akan memaksakan kehendaknya pada negara yang kalah.",
+              "Perubahan proses merupakan perubahan yang sifatnya tidak mendasar. Perubahan tersebut hanya menyempurnakan perubahan yang sebelumnya sudah ada. Seperti perubahan pada sistem pendaftaran sekolah. Dahulu bagi peserta didik yang ingin mendaftar sekolah harus datang ke sekolah yang dituju. Proses PPDB dilakukan secara online, mulai dari pendaftaran, proses seleksi, hingga pengumuman hasil seleksi. Dan juga pemberlakuan sistem zonasi, peserta hanya dapat mendaftar sekolah si zona tempat tinggalnya.  ",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,

@@ -4,9 +4,18 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/SplashScreen/SplashScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/MateriScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/AgenPerubahanSosial/AgenPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPendorongPerubahanSosial/FaktorPendorongPerubahanSosial.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPenghambat/FaktorPenghambatScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorExternalPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPerubahanSosial/FaktorInternalPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/ProsesPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/ProsesPerubahanSosial/ProsesPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/TeoriPerubahanSosial/TeoriPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/MateriBinding.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/PerubahanSosialBinding.dart';
 
@@ -57,6 +66,49 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/FAKTOREXTERNALPERUBAHANSOSIAL',
           page: () => FaktorExternalPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/FAKTORPENDORONGPERUBAHANSOSIAL',
+          page: () => FaktorPendorongPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/FAKTORPENHAMBATPERUBAHANSOSIAL',
+          page: () => FaktorPenghambatScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/AGENPERUBAHANSOSIAL',
+          page: () => AgenPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/TEORIPERUBAHANSOSIAL',
+          page: () => TeoriPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+         GetPage(
+          name: '/PROSESNYAPERUBAHANSOSIAL',
+          page: () => ProsesnyaPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/ARAHPERUBAHANSOSIAL',
+          page: () => ArahPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ), GetPage(
+          name: '/KECEPATANPERUBAHANSOSIAL',
+          page: () => KecepatanPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),GetPage(
+          name: '/SIFATPERUBAHANSOSIAL',
+          page: () => SifatPerubahanSosialScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/UKURANPERUBAHANSOSIAL',
+          page: () => UkuranPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
         )
         // GetPage with custom transitions and bindings
