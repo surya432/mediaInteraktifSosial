@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/Setting/SettingScreen.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/QuizScreen.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
     precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
             fit: StackFit.loose,
             children: [
               Positioned(
-                top: context.isTablet ? Get.height * .05:0,
+                top: context.isTablet ? Get.height * .05 : 0,
                 left: 0,
                 right: 0,
                 child: Image.asset(
@@ -78,8 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(width: 8),
                     GestureDetector(
-                      onTap: () =>
-                          Get.toNamed("/MATERI"),
+                      onTap: () => Get.toNamed("/MATERI"),
                       child: Image.asset(
                         "assets/button/btn-01.png",
                         height: Get.height * .15,
@@ -88,6 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(width: 8),
                     GestureDetector(
+                      onTap: () => Get.to(QuizScreen()),
                       child: Image.asset(
                         "assets/button/btn-12.png",
                         height: Get.height * .1,

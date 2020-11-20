@@ -17,58 +17,18 @@ class DampakPerubahanSosialScreen extends StatelessWidget {
           widgetTitle: "assets/button/btn-05.png",
           widgetContent: Container(
             child: Center(
-              child: Column(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                          child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/PROSESNYAPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
-                      )),
-                      Expanded(
-                          child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/ARAHPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
-                      )),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                          child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/SIFATPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
-                      )),
-                      Expanded(
-                          child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/KECEPATANPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
-                      )),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
                   Expanded(
                       child: GestureDetector(
-                    onTap: () => Get.toNamed("/UKURANPERUBAHANSOSIAL"),
+                    onTap: () => Get.toNamed("/DAMPAKPOSITIFPERUBAHANSOSIAL"),
+                    child: Image.asset("assets/button/btn-05.png",
+                        height: Get.height * .1, width: Get.height * .1),
+                  )),
+                  Expanded(
+                      child: GestureDetector(
+                    onTap: () => Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
                         height: Get.height * .1, width: Get.height * .1),
                   )),

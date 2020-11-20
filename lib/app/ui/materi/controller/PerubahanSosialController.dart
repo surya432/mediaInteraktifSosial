@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakNegatif.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakPositif.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/AgenPerubahanSosial/AgenPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPendorongPerubahanSosial/FaktorPendorongPerubahanSosial.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPenghambat/FaktorPenghambatScreen.dart';
@@ -212,7 +214,8 @@ class PerubahanSosialController extends GetxController {
     ]);
   }
 
-  initProsesnyaPerubahanSosial() { pageIndex.value = 0;
+  initProsesnyaPerubahanSosial() {
+    pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
       {
@@ -223,5 +226,33 @@ class PerubahanSosialController extends GetxController {
         "route": WidgetProsesnyaPerubahanSosial2(),
         "images": "assets/button/btn-05.png"
       }
-    ]);}
+    ]);
+  }
+
+  initDampakPositifPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {"route": WidgetDampakPositif1(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakPositif2(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakPositif3(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakPositif4(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakPositif5(), "images": "assets/button/btn-05.png"}
+    ]);
+  }
+
+  initDampakNegatifPerubahanSosial() {
+    pageIndex.value = 0;
+    menuList.clear();
+    menuList.assignAll([
+      {"route": WidgetDampakNegatif1(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif2(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif3(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif4(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif5(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif6(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif7(), "images": "assets/button/btn-05.png"},
+      {"route": WidgetDampakNegatif8(), "images": "assets/button/btn-05.png"}
+    ]);
+  }
 }

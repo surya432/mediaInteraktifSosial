@@ -4,11 +4,13 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/SplashScreen/SplashScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/MateriScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/KecepatanPerubahanSosial/KecepatanPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/ProsesnyaPerubahanSosial/ProsesnyaPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/SifatPerubahanSosial/SifatPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/UkuranPerubahan/UkuranPerubahanSosialScreen.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakNegatif.dart';
+import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakPositif.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/AgenPerubahanSosial/AgenPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPendorongPerubahanSosial/FaktorPendorongPerubahanSosial.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/FaktorPenghambat/FaktorPenghambatScreen.dart';
@@ -18,6 +20,8 @@ import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/Pros
 import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/TeoriPerubahanSosial/TeoriPerubahanSosialScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/MateriBinding.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/PerubahanSosialBinding.dart';
+import 'package:mediaintersosial/app/ui/quiz/binding/QuizBinding.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/QuizSub1Screen.dart';
 
 void main() {
   ByteDataAssets.instance.basePath = 'assets/images/';
@@ -88,7 +92,7 @@ class MyApp extends StatelessWidget {
           page: () => TeoriPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
         ),
-         GetPage(
+        GetPage(
           name: '/PROSESNYAPERUBAHANSOSIAL',
           page: () => ProsesnyaPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
@@ -97,11 +101,13 @@ class MyApp extends StatelessWidget {
           name: '/ARAHPERUBAHANSOSIAL',
           page: () => ArahPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
-        ), GetPage(
+        ),
+        GetPage(
           name: '/KECEPATANPERUBAHANSOSIAL',
           page: () => KecepatanPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
-        ),GetPage(
+        ),
+        GetPage(
           name: '/SIFATPERUBAHANSOSIAL',
           page: () => SifatPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
@@ -110,6 +116,21 @@ class MyApp extends StatelessWidget {
           name: '/UKURANPERUBAHANSOSIAL',
           page: () => UkuranPerubahanSosialScreen(),
           binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/DAMPAKPOSITIFPERUBAHANSOSIAL',
+          page: () => DampakPositifScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/DAMPAKNEGATIFPERUBAHANSOSIAL',
+          page: () => DampakNegatifScreen(),
+          binding: PerubahanSosialBinding(),
+        ),
+        GetPage(
+          name: '/QuizSub1',
+          page: () => QuizSub1Screen(),
+          binding: QuizBinding(),
         )
         // GetPage with custom transitions and bindings
       ],
