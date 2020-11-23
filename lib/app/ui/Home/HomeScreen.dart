@@ -41,16 +41,19 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                onTap: () => Get.find<HomeController>().playMusic(),
-                child: Obx(() => Image.asset(
-                    Get.find<HomeController>().getImagesPlay,
-                    height: context.height * 0.1,
-                    width: context.height * 0.1)),
+                child: Image.asset(
+                  "assets/button/btn-03.png",
+                  height: Get.height * .1,
+                  width: Get.height * .1,
+                ),
               ),
               GestureDetector(
-                onTap: () => _onWillPop,
-                child: Image.asset("assets/button/btn-05.png",
-                    height: context.height * 0.1, width: context.height * 0.1),
+                onTap: _onWillPop,
+                child: Image.asset(
+                  "assets/button/btn-05.png",
+                  height: Get.height * .1,
+                  width: Get.height * .1,
+                ),
               ),
             ],
           ),
@@ -84,8 +87,8 @@ class HomeScreen extends StatelessWidget {
                             transition: Transition.zoom),
                         child: Image.asset(
                           "assets/button/btn-08.png",
-                          height: Get.height * .15,
-                          width: Get.height * .15,
+                          height: Get.height * .1,
+                          width: Get.height * .1,
                         ),
                       ),
                       SizedBox(width: 8),
@@ -93,8 +96,8 @@ class HomeScreen extends StatelessWidget {
                         onTap: () => Get.toNamed("/MATERI"),
                         child: Image.asset(
                           "assets/button/btn-01.png",
-                          height: Get.height * .18,
-                          width: Get.height * .18,
+                          height: Get.height * .15,
+                          width: Get.height * .15,
                         ),
                       ),
                       SizedBox(width: 8),
@@ -102,8 +105,8 @@ class HomeScreen extends StatelessWidget {
                         onTap: () => Get.to(QuizScreen()),
                         child: Image.asset(
                           "assets/button/btn-12.png",
-                          height: Get.height * .15,
-                          width: Get.height * .15,
+                          height: Get.height * .1,
+                          width: Get.height * .1,
                         ),
                       )
                     ],

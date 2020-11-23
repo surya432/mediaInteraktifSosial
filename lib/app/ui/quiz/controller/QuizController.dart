@@ -12,9 +12,10 @@ class QuizController extends GetxController {
 
   @override
   void onInit() {
-    // interval(onclickj, (_) => checkanswer(),time: Duration(milliseconds: 2500));
-    debounce(onclickj, (_) => checkanswer(),
+    interval(onclickj, (_) => checkanswer(),
         time: Duration(milliseconds: 2500));
+    // debounce(onclickj, (_) => checkanswer(),
+    //     time: Duration(milliseconds: 2500));
     // debounce(numberQuiz, (_) => nextpertanyaan(),
     //     time: Duration(milliseconds: 250));
     super.onInit();
