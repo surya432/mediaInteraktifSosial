@@ -41,11 +41,11 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                child: Image.asset(
-                  "assets/button/btn-03.png",
-                  height: Get.height * .1,
-                  width: Get.height * .1,
-                ),
+                onTap: () => Get.find<HomeController>().playMusic(),
+                child: Obx(() => Image.asset(
+                    Get.find<HomeController>().getImagesPlay,
+                    height: context.height * 0.1,
+                    width: context.height * 0.1)),
               ),
               GestureDetector(
                 onTap: _onWillPop,
