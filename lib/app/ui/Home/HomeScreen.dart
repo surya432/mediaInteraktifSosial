@@ -31,15 +31,15 @@ class _HomeScreenState extends State<HomeScreen> {
             GestureDetector(
               child: Image.asset(
                 "assets/button/btn-03.png",
-                height: Get.height * .1,
-                width: Get.height * .1,
+                height: Get.height * .12,
+                width: Get.height * .12,
               ),
             ),
             GestureDetector(
               child: Image.asset(
                 "assets/button/btn-05.png",
-                height: Get.height * .1,
-                width: Get.height * .1,
+                height: Get.height * .12,
+                width: Get.height * .12,
               ),
             ),
           ],
@@ -74,8 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           Get.to(SettingScreen(), transition: Transition.zoom),
                       child: Image.asset(
                         "assets/button/btn-08.png",
-                        height: Get.height * .1,
-                        width: Get.height * .1,
+                        height: Get.height * .15,
+                        width: Get.height * .15,
                       ),
                     ),
                     SizedBox(width: 8),
@@ -83,8 +83,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       onTap: () => Get.toNamed("/MATERI"),
                       child: Image.asset(
                         "assets/button/btn-01.png",
-                        height: Get.height * .15,
-                        width: Get.height * .15,
+                        height: Get.height * .18,
+                        width: Get.height * .18,
                       ),
                     ),
                     SizedBox(width: 8),
@@ -92,8 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       onTap: () => Get.to(QuizScreen()),
                       child: Image.asset(
                         "assets/button/btn-12.png",
-                        height: Get.height * .1,
-                        width: Get.height * .1,
+                        height: Get.height * .15,
+                        width: Get.height * .15,
                       ),
                     )
                   ],

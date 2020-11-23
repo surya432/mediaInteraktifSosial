@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class TeoriPerubahanSosialScreen extends StatelessWidget {
   const TeoriPerubahanSosialScreen({Key key}) : super(key: key);
@@ -71,21 +72,7 @@ class TeoriPerubahanSosialScreen extends StatelessWidget {
                   widgetTitle: controller.menuList[controller.pageIndex.toInt()]
                       ['images'],
                 ),
-                custombar: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GestureDetector(
-                      onTap: () => {},
-                      child: Image.asset("assets/button/btn-03.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Image.asset("assets/button/btn-05.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                  ],
-                ),
+                custombar: WidgetAppbarCloseMusic(),
               );
             }),
       ),
@@ -238,7 +225,8 @@ class WidgetTeoriPerubahanSosial4 extends StatelessWidget {
                 fontFamily: "Gothic",
               ),
               textAlign: TextAlign.justify,
-            ),  Align(
+            ),
+            Align(
               alignment: Alignment.center,
               child: Image.asset("assets/images/teoripenghambat2.png",
                   height: Get.height * .5, width: Get.width * .5),

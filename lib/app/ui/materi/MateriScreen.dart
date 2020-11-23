@@ -6,6 +6,7 @@ import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/Peru
 import 'package:mediaintersosial/app/ui/materi/controller/MateriController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class MateriScreen extends StatelessWidget {
   const MateriScreen({Key key}) : super(key: key);
@@ -72,21 +73,7 @@ class MateriScreen extends StatelessWidget {
                       ['images'],
                 );
               }),
-          custombar: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              GestureDetector(
-                onTap: () => {},
-                child: Image.asset("assets/button/btn-03.png",
-                    height: Get.height * .1, width: Get.height * .1),
-              ),
-              GestureDetector(
-                onTap: () => Get.back(),
-                child: Image.asset("assets/button/btn-05.png",
-                    height: Get.height * .1, width: Get.height * .1),
-              ),
-            ],
-          ),
+          custombar: WidgetAppbarCloseMusic(),
         ),
       ),
     );
@@ -98,7 +85,7 @@ class WidgetMateri1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SingleChildScrollView(
       child: Column(
         children: [
           Text(
@@ -124,34 +111,38 @@ class WidgetMateri2 extends StatelessWidget {
     return Container(
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Spacer(),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Expanded(
-                    child: GestureDetector(
-                  onTap: () => Get.to(PerubahanSosialScreen(),
-                      transition: Transition.leftToRight),
-                  child: Image.asset("assets/button/btn-05.png",
-                      height: Get.height * .1, width: Get.height * .1),
-                )),
-                Expanded(
-                    child: GestureDetector(
-                  onTap: () => Get.to(BentukPerubahanSosialScreen()),
-                  child: Image.asset("assets/button/btn-05.png",
-                      height: Get.height * .1, width: Get.height * .1),
-                )),
+                Center(
+                  child: GestureDetector(
+                    onTap: () => Get.to(PerubahanSosialScreen(),
+                        transition: Transition.leftToRight),
+                    child: Image.asset("assets/materi/headtitle-34.png",
+                        height: context.height * .15,
+                        width: context.width * .25),
+                  ),
+                ),
+                Center(
+                  child: GestureDetector(
+                    onTap: () => Get.to(BentukPerubahanSosialScreen()),
+                    child: Image.asset("assets/materi/headtitle-35.png",
+                        height: context.height * .15,
+                        width: context.width * .25),
+                  ),
+                ),
               ],
             ),
-            Spacer(),
-            Expanded(
-                child: GestureDetector(
+            SizedBox(height: context.height * .05),
+            GestureDetector(
               onTap: () => Get.to(DampakPerubahanSosialScreen()),
-              child: Image.asset("assets/button/btn-05.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            )),
-            Spacer(),
+              child: Image.asset("assets/materi/headtitle-36.png",
+                  height: context.height * .15, width: context.width * .25),
+            ),
           ],
         ),
       ),

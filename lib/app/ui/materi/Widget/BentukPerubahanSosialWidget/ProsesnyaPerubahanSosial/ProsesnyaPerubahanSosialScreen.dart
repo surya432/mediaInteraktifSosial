@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class ProsesnyaPerubahanSosialScreen extends StatelessWidget {
   const ProsesnyaPerubahanSosialScreen({Key key}) : super(key: key);
@@ -71,21 +72,7 @@ class ProsesnyaPerubahanSosialScreen extends StatelessWidget {
                   widgetTitle: controller.menuList[controller.pageIndex.toInt()]
                       ['images'],
                 ),
-                custombar: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GestureDetector(
-                      onTap: () => {},
-                      child: Image.asset("assets/button/btn-03.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Image.asset("assets/button/btn-05.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                  ],
-                ),
+                custombar: WidgetAppbarCloseMusic(),
               );
             }),
       ),
@@ -123,7 +110,6 @@ class WidgetProsesnyaPerubahanSosial1 extends StatelessWidget {
               ),
               textAlign: TextAlign.justify,
             ),
-           
           ],
         ),
       ),
@@ -154,10 +140,8 @@ class WidgetProsesnyaPerubahanSosial2 extends StatelessWidget {
             SizedBox(height: 16),
             Align(
               alignment: Alignment.center,
-              child: Image.asset(
-                  "assets/images/ProsesnyaPerubahanSosial1.png",
-                  height: Get.height * .5,
-                  width: Get.width * .5),
+              child: Image.asset("assets/images/ProsesnyaPerubahanSosial1.png",
+                  height: Get.height * .5, width: Get.width * .5),
             ),
             Text(
               "Kebakaran, menyebabkan beragam perubahan dalam kehidupan masyarakat. Kebakaran merupakan perubahan yang terjadi tanpa perencanaan yang terjadi diluar perkiraan masyarakat. Perubahan ini cenderung berdampak negatif dikarenakan perubahaanya tidak dikehendaki masyarakat. ",

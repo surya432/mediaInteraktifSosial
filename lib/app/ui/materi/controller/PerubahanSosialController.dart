@@ -30,9 +30,18 @@ class PerubahanSosialController extends GetxController {
     pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
-      {"route": WidgetperubahanSosial1(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetperubahanSosial2(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetperubahanSosial3(), "images": "assets/button/btn-05.png"},
+      {
+        "route": WidgetperubahanSosial1(),
+        "images": "assets/slide/headtitle-46.png"
+      },
+      {
+        "route": WidgetperubahanSosial2(),
+        "images": "assets/slide/headtitle-46.png"
+      },
+      {
+        "route": WidgetperubahanSosial3(),
+        "images": "assets/slide/headtitle-46.png"
+      },
     ]);
   }
 
@@ -42,15 +51,15 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetFaktorExternalPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
       {
         "route": WidgetFaktorExternalPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
       {
         "route": WidgetFaktorExternalPerubahanSosial3(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
     ]);
   }
@@ -61,19 +70,19 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetFaktorInternalPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
       {
         "route": WidgetFaktorInternalPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
       {
         "route": WidgetFaktorInternalPerubahanSosial3(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
       {
         "route": WidgetFaktorInternalPerubahanSosial4(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-50.png"
       },
     ]);
   }
@@ -82,14 +91,38 @@ class PerubahanSosialController extends GetxController {
     pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
-      {"route": WidgetFaktorPendorong1(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong2(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong3(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong4(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong6(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong7(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong8(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetFaktorPendorong9(), "images": "assets/button/btn-05.png"},
+      {
+        "route": WidgetFaktorPendorong1(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong2(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong3(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong4(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong6(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong7(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong8(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
+        "route": WidgetFaktorPendorong9(),
+        "images": "assets/slide/headtitle-49.png"
+      },
     ]);
   }
 
@@ -99,19 +132,19 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetFaktorPenghambat1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-51.png"
       },
       {
         "route": WidgetFaktorPenghambat2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-51.png"
       },
       {
         "route": WidgetFaktorPenghambat3(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-51.png"
       },
       {
         "route": WidgetFaktorPenghambat4(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-51.png"
       },
     ]);
   }
@@ -122,11 +155,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetAgenPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-47.png"
       },
       {
         "route": WidgetAgenPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-47.png"
       },
     ]);
   }
@@ -137,19 +170,19 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetTeoriPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-48.png"
       },
       {
         "route": WidgetTeoriPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-48.png"
       },
       {
         "route": WidgetTeoriPerubahanSosial3(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-48.png"
       },
       {
         "route": WidgetTeoriPerubahanSosial4(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/slide/headtitle-48.png"
       },
     ]);
   }

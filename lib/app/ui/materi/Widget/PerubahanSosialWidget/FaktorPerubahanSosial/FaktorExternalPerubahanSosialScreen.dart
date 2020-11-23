@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
   const FaktorExternalPerubahanSosialScreen({Key key}) : super(key: key);
@@ -71,21 +72,7 @@ class FaktorExternalPerubahanSosialScreen extends StatelessWidget {
                   widgetTitle: controller.menuList[controller.pageIndex.toInt()]
                       ['images'],
                 ),
-                custombar: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GestureDetector(
-                      onTap: () => {},
-                      child: Image.asset("assets/button/btn-03.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Image.asset("assets/button/btn-05.png",
-                          height: Get.height * .1, width: Get.height * .1),
-                    ),
-                  ],
-                ),
+                custombar: WidgetAppbarCloseMusic(),
               );
             }),
       ),
@@ -98,7 +85,7 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -135,7 +122,7 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -172,7 +159,7 @@ class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

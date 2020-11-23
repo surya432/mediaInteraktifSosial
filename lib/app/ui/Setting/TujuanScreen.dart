@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class TujuanScreen extends StatelessWidget {
   const TujuanScreen({Key key}) : super(key: key);
@@ -105,21 +106,7 @@ class TujuanScreen extends StatelessWidget {
             ),
           ),
         ),
-        custombar: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              onTap: () => {},
-              child: Image.asset("assets/button/btn-03.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-            GestureDetector(
-              onTap: () => Get.back(),
-              child: Image.asset("assets/button/btn-05.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-          ],
-        ),
+        custombar: WidgetAppbarCloseMusic(),
       ),
     );
   }

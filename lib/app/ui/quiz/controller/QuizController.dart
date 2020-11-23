@@ -51,14 +51,38 @@ class QuizController extends GetxController {
     numberQuiz.value = 0;
     data.clear();
     data.assignAll([
-      {"route": WidgetDampakNegatif1(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif2(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif3(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif4(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif5(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif6(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif7(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif8(), "images": "assets/button/btn-05.png"}
+      {
+        "route": WidgetDampakNegatif1(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif2(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif3(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif4(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif5(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif6(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif7(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetDampakNegatif8(),
+        "images": "assets/kuis/headtitle-17.png"
+      }
     ]);
   }
 

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mediaintersosial/app/ui/materi/controller/PerubahanSosialController.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class FaktorPendorongPerubahanSosialScreen extends StatelessWidget {
   const FaktorPendorongPerubahanSosialScreen({Key key}) : super(key: key);
@@ -68,21 +69,7 @@ class FaktorPendorongPerubahanSosialScreen extends StatelessWidget {
                 widgetTitle: controller.menuList[controller.pageIndex.toInt()]
                     ['images'],
               ),
-              custombar: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GestureDetector(
-                    onTap: () => {},
-                    child: Image.asset("assets/button/btn-03.png",
-                        height: Get.height * .1, width: Get.height * .1),
-                  ),
-                  GestureDetector(
-                    onTap: () => Get.back(),
-                    child: Image.asset("assets/button/btn-05.png",
-                        height: Get.height * .1, width: Get.height * .1),
-                  ),
-                ],
-              ),
+              custombar: WidgetAppbarCloseMusic(),
             );
           }),
     ));
@@ -293,7 +280,6 @@ class WidgetFaktorPendorong5 extends StatelessWidget {
             ),
             Text(
               "“Job seeker di Job fair yang diadakan oleh pemerintah maupun lembaga swasta”",
-              
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,

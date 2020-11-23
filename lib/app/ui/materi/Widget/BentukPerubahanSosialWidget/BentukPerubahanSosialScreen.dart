@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class BentukPerubahanSosialScreen extends StatelessWidget {
   const BentukPerubahanSosialScreen({Key key}) : super(key: key);
@@ -14,7 +15,7 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
       body: BGContainerWidget(
         kPaddingTop: context.mediaQueryPadding.top,
         content: BoardTitleWidget(
-          widgetTitle: "assets/button/btn-05.png",
+          widgetTitle: "assets/materi/headtitle-38.png",
           widgetContent: Container(
             child: Center(
               child: Column(
@@ -29,13 +30,15 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/PROSESNYAPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/ARAHPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                     ],
                   ),
@@ -49,13 +52,15 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/SIFATPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/KECEPATANPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                     ],
                   ),
@@ -66,28 +71,14 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
                       child: GestureDetector(
                     onTap: () => Get.toNamed("/UKURANPERUBAHANSOSIAL"),
                     child: Image.asset("assets/button/btn-05.png",
-                        height: Get.height * .1, width: Get.height * .1),
+                        height: context.height * .1, width: context.width * .3),
                   )),
                 ],
               ),
             ),
           ),
         ),
-        custombar: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              onTap: () => {},
-              child: Image.asset("assets/button/btn-03.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-            GestureDetector(
-              onTap: () => Get.back(),
-              child: Image.asset("assets/button/btn-05.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-          ],
-        ),
+        custombar: WidgetAppbarCloseMusic(),
       ),
     );
   }

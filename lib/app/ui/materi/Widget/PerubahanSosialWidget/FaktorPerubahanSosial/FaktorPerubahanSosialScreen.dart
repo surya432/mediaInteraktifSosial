@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class FaktorPerubahanSosialScreen extends StatelessWidget {
   const FaktorPerubahanSosialScreen({Key key}) : super(key: key);
@@ -14,52 +15,40 @@ class FaktorPerubahanSosialScreen extends StatelessWidget {
       body: BGContainerWidget(
         kPaddingTop: context.mediaQueryPadding.top,
         content: BoardTitleWidget(
-          widgetTitle: "assets/button/btn-05.png",
+          widgetTitle: "assets/slide/headtitle-50.png",
           widgetContent: Container(
             child: Center(
-          child: Column(
-            children: [
-              Spacer(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
                 children: [
-                  Expanded(
-                      child: GestureDetector(
-                    onTap: () =>
-                        Get.toNamed("/FAKTORINTERNALPERUBAHANSOSIAL"),
-                    child: Image.asset("assets/button/btn-05.png",
-                        height: Get.height * .1, width: Get.height * .1),
-                  )),
-                  Expanded(
-                      child: GestureDetector(
-                    onTap: () =>
-                        Get.toNamed("/FAKTOREXTERNALPERUBAHANSOSIAL"),
-                    child: Image.asset("assets/button/btn-05.png",
-                        height: Get.height * .1, width: Get.height * .1),
-                  )),
+                  Spacer(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                          child: GestureDetector(
+                        onTap: () =>
+                            Get.toNamed("/FAKTORINTERNALPERUBAHANSOSIAL"),
+                        child: Image.asset("assets/button/btn-05.png",
+                            height: context.height * .1,
+                            width: context.width * .3),
+                      )),
+                      Expanded(
+                          child: GestureDetector(
+                        onTap: () =>
+                            Get.toNamed("/FAKTOREXTERNALPERUBAHANSOSIAL"),
+                        child: Image.asset("assets/button/btn-05.png",
+                            height: context.height * .1,
+                            width: context.width * .3),
+                      )),
+                    ],
+                  ),
+                  Spacer(),
                 ],
               ),
-              Spacer(),
-            ],
-          ),
             ),
           ),
         ),
-        custombar: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              onTap: () => {},
-              child: Image.asset("assets/button/btn-03.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-            GestureDetector(
-              onTap: () => Get.back(),
-              child: Image.asset("assets/button/btn-05.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-          ],
-        ),
+        custombar: WidgetAppbarCloseMusic(),
       ),
     );
   }

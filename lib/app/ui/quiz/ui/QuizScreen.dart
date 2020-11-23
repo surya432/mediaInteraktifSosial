@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediaintersosial/app/widget/BGdecorationWidget.dart';
 import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
+import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
 class QuizScreen extends StatelessWidget {
   const QuizScreen({Key key}) : super(key: key);
@@ -29,14 +30,15 @@ class QuizScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/QuizSub1"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
+                        onTap: () => Get.toNamed("/QuizSub2"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                     ],
                   ),
@@ -49,14 +51,16 @@ class QuizScreen extends StatelessWidget {
                         onTap: () =>
                             Get.toNamed("/DAMPAKPOSITIFPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () =>
                             Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
                         child: Image.asset("assets/button/btn-05.png",
-                            height: Get.height * .1, width: Get.height * .1),
+                            height: context.height * .1,
+                            width: context.width * .3),
                       )),
                     ],
                   ),
@@ -65,21 +69,7 @@ class QuizScreen extends StatelessWidget {
             ),
           ),
         ),
-        custombar: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              onTap: () => {},
-              child: Image.asset("assets/button/btn-03.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-            GestureDetector(
-              onTap: () => Get.back(),
-              child: Image.asset("assets/button/btn-05.png",
-                  height: Get.height * .1, width: Get.height * .1),
-            ),
-          ],
-        ),
+        custombar: WidgetAppbarCloseMusic(),
       ),
     );
   }
