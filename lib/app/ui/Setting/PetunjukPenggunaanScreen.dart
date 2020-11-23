@@ -15,7 +15,7 @@ class PetunjukPenggunaanScreen extends StatelessWidget {
       body: BGContainerWidget(
         kPaddingTop: context.mediaQueryPadding.top,
         content: BoardTitleWidget(
-          widgetTitle: "assets/menu/headtitle-23.png",
+          widgetTitle: "assets/menu/headtitle-22.png",
           widgetContent: Container(
             padding: EdgeInsets.all(16),
             child: Center(
@@ -25,7 +25,7 @@ class PetunjukPenggunaanScreen extends StatelessWidget {
                   Text(
                     "Gunakan media interaktif ini untuk mempermudah proses pembelajaran Sosiologi materi PERUBAHAN SOSIAL DALAM MASYARAKAT, perhatikan seiap materi yang disajikan dan asah kemampuanmu di menu kuis sebahai bahan evaluasi.",
                     style: TextStyle(
-                      fontSize: 16,
+                      //fontSize: 16,
                       color: Colors.white,
                       fontFamily: "Gothic",
                     ),
@@ -36,7 +36,7 @@ class PetunjukPenggunaanScreen extends StatelessWidget {
                   Text(
                     "Tombol yang dapat digunakan",
                     style: TextStyle(
-                      fontSize: 16,
+                      //fontSize: 16,
                       color: Colors.white,
                       fontFamily: "Gothic",
                     ),

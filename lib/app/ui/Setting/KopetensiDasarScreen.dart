@@ -30,7 +30,7 @@ class KopetensiDasarScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(12.0),
                         child: Text('Kompetensi Dasar'.toUpperCase(),
                             style: TextStyle(
-                                fontSize: 16,
+                                //fontSize: 16,
                                 fontFamily: "Gothic",
                                 color: Colors.white)),
                       ),
@@ -40,7 +40,7 @@ class KopetensiDasarScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(12.0),
                         child: Text('Indikator'.toUpperCase(),
                             style: TextStyle(
-                                fontSize: 16,
+                                //fontSize: 16,
                                 fontFamily: "Gothic",
                                 color: Colors.white)),
                       )

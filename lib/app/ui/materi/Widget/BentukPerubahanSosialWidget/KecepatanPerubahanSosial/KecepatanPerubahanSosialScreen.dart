@@ -91,20 +91,23 @@ class WidgetKecepatanPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Evolusi (perubahan secara lambat)",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Evolusi (perubahan secara lambat)".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan evolusi merupakan perubahan yang lama dengan diikuti perubahan kecil. Pada evolusi, perubahan yang terjadi tanpa ada tekanan atau terjadi dengan sendirinya, kenapa? Karena masyarakat biasanya selalu berusaha menyesuaikan diri dengan keadaan atau kondisi yang baru timbul di lingkungannya. Seperti perubahan dari masyarakat tradisional ke modern.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,20 +131,23 @@ class WidgetKecepatanPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Revolusi (perubahan secara cepat)",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Revolusi (perubahan secara cepat)".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan revolusi merupakan perubahan yang terjadi secara cepat dalam dasar atau sendi-sendir pokok yang terdapat dalam masyarakat. Peubahan ini dapat direncanakan terlebih dahulu dan biasanya harus ada pemimpin kelompok masyarakat. Seperti revolusi industry yang berkembang pesat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

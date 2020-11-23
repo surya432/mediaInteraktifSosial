@@ -28,7 +28,8 @@ class FaktorPerubahanSosialScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () =>
                             Get.toNamed("/FAKTORINTERNALPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/penyebab/headtitle-52.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
@@ -36,7 +37,8 @@ class FaktorPerubahanSosialScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () =>
                             Get.toNamed("/FAKTOREXTERNALPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/penyebab/headtitle-53.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),

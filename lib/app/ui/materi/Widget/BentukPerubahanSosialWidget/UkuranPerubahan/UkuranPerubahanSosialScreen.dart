@@ -91,20 +91,23 @@ class WidgetUkuranPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan kecil",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan kecil".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan kecil merupakan perubahan yang tidak menyangkut aspek penting dalam masyarakat. Kondisi tersebut menunjukkan perubahan kecil hanya berpengaruh terhadap satu objek perubahan dan tidak menimbulkan perubahan lain. Oleh karena itu, perubahan kecil biasanya terjadi pada perubahan kebutuhan sekunder masyarakat, seperti perubahan mode rambut. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,20 +131,23 @@ class WidgetUkuranPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan Besar",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan Besar".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan besar merupakan perubahan yang dapat memberi pengaruh luas dalam masyarakat. Disebut perubahan besar apabila perubahan tersebut mampu membawa perubahan dalam lembaga kemasyarakatan misalnya hubungan kerja, sistem kepemilikan tanah, hubungan kekeluargaan, dan stratifikasi sosial masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

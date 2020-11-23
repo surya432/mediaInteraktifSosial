@@ -91,20 +91,23 @@ class WidgetArahPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Progress",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Progress".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Progress merupakan perubahan sosial yang sangat diharapkan masyarakat. Perubahan yang membawa kemajuan ini menguntungkan masyarakat seperti bergantinya masyarakat tradisional menjadi masyarakat modern. Seperti penemuan alat komunikasi dan transportasi yang semakin canggih. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,20 +131,23 @@ class WidgetArahPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Regress",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Regress".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Regres atau perubahan menuju kemunduran disebabkan oleh penggunanya itu sendiri. Biasanya terjadi karena penyalahgunaan perangkat teknologi. Seperti internet disalah gunakan untuk melakukan tindak kejahatan atau mengakses situs yang tidak pantas.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

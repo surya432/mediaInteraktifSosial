@@ -19,9 +19,11 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
           widgetContent: Container(
             child: Center(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 30,
+                    height: 16,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,21 +31,23 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/PROSESNYAPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/Bentuk/headtitle-54.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/ARAHPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/Bentuk/headtitle-55.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                     ],
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 16,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,28 +55,29 @@ class BentukPerubahanSosialScreen extends StatelessWidget {
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/SIFATPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/Bentuk/headtitle-56.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/KECEPATANPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset(
+                            "assets/materi/Bentuk/headtitle-57.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                     ],
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 16,
                   ),
-                  Expanded(
-                      child: GestureDetector(
+                  GestureDetector(
                     onTap: () => Get.toNamed("/UKURANPERUBAHANSOSIAL"),
-                    child: Image.asset("assets/button/btn-05.png",
+                    child: Image.asset("assets/materi/Bentuk/headtitle-58.png",
                         height: context.height * .1, width: context.width * .3),
-                  )),
+                  ),
                 ],
               ),
             ),

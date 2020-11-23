@@ -2,6 +2,8 @@ import 'package:asset_cache/asset_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:mediaintersosial/app/ui/Home/HomeBinding.dart';
+import 'package:mediaintersosial/app/ui/Home/HomeScreen.dart';
 import 'package:mediaintersosial/app/ui/SplashScreen/SplashScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/MateriScreen.dart';
 import 'package:mediaintersosial/app/ui/materi/Widget/BentukPerubahanSosialWidget/ArahPerubahanSosial/ArahPerubahanSosialScreen.dart';
@@ -43,8 +45,8 @@ class MyApp extends StatelessWidget {
       enableLog: true,
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.rightToLeft,
-      transitionDuration: new Duration(milliseconds: 1000),
-      title: 'Flutter Demo',
+      transitionDuration: new Duration(milliseconds: 500),
+      title: 'Media Perubahan Sosial',
       theme: buildThemeData(context),
       // theme: ThemeData.dark(),
       initialRoute: '/SPLASH',
@@ -52,6 +54,11 @@ class MyApp extends StatelessWidget {
       getPages: [
         //Simple GetPage
         GetPage(name: '/SPLASH', page: () => SplashScreen()),
+        GetPage(
+          name: '/HOME',
+          page: () => HomeScreen(),
+          binding: HomeBinding(),
+        ),
         GetPage(
           name: '/MATERI',
           page: () => MateriScreen(),

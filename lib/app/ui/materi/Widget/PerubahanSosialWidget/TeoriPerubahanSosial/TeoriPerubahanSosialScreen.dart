@@ -91,20 +91,23 @@ class WidgetTeoriPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "1. Teori Evolusi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Teori Evolusi".toUpperCase(),
+                style: TextStyle(
+                  //fontSize: 24,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Teori evolusi menjelaskan bahwa perubahan sosial terjadi secara lambat untuk waktu yang lama dalam masyarakat. Menurut teori ini perubahan sosial terjadi karena perubahan pada cara peng-organisasian masyarakat, sistem kerja, pola pemikiran dan perkembangan sosial. Perubahan sosial dalam teori evolusi jarang menimbulkan konflik karena perubahannya berlangsung lambat dan cenderung tidak disadari.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -133,20 +136,23 @@ class WidgetTeoriPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "2. Teori Konflik",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Teori Konflik".toUpperCase(),
+                style: TextStyle(
+                  //fontSize: 24,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Teori konflik merupakan perubahan sosial terbentuk karena adanya konflik dan ketegangan dalam masyarakat. Konflik ini biasanya berupa pertentangan antar kelas penguasa dengan masyarakat yang tertindas sehingga masyarakat dalam kelas yang lebih rendah menginginkan adanya perubahan dengan mengatasnamakan keadilan. Berdasarkan teori ini, jika memang perubahan yang dikehendaki berhasil tercapai, maka pada akhirnya masyarakat yang terbentuk akan hidup tanpa pembagian kelas.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -170,20 +176,23 @@ class WidgetTeoriPerubahanSosial3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "3. Teori Fungsionalis",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Teori Fungsionalis".toUpperCase(),
+                style: TextStyle(
+                  //fontSize: 24,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Teori Fungsionalis menyatakan tentang ketidakpuasan masyarakat terhadap keadaan sosial yang sedang berlangsung menjadi penyebab utama terjadinya perubahan sosial. Ketidakpuasan ini tidak dirasakan oleh semua anggota masyarakat, sebagian anggota masyarakat tidak menginginkan perubahan. Apabila lebih banyak yang menginginkan perubahan biasanya perubahan akan terjadi, tetapi apabila hanya kelompok minoritas dengan kekuatan kecil yang menginginkan perubahan, maka perubahan tersebut sulit untuk tercapai.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -207,20 +216,23 @@ class WidgetTeoriPerubahanSosial4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "4. Teori Siklus",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Teori Siklus".toUpperCase(),
+                style: TextStyle(
+                  //fontSize: 24,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Teori siklus menyatakan bahwa perubahan sosial ini bagaikan roda yang sedang berputar, artinya perubahan zamam merupakan sesuatu yang tidak dapat dihindari oleh manusia dan tidak dapat dikendalikan oleh siapapun. Bagaimanapun seseorang berusahan untuk mencegah terjadinya perubahan sosial mereka tidak akan mampu, karena perubahan sosial sudah seperti sifat alami yang dimiliki setiap lingkungan masyarakat.\n",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

@@ -59,20 +59,24 @@ class WidgetQuizSub1Soal1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Pernyataan tepat mengenai konsep perubahan sosial ditunjukkan oleh pilihan….",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Pernyataan tepat mengenai konsep perubahan sosial ditunjukkan oleh pilihan…."
+                    .toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "a.Perubahan sosial tidak dipengaruhi oleh kebudayaan dari masyarakat lain",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -108,7 +112,7 @@ class WidgetQuizSub1Soal1 extends StatelessWidget {
                         Text(
                           answer,
                           style: TextStyle(
-                            // fontSize: 13,
+                            // //fontSize: 13,
                             wordSpacing: 4,
                             color: Colors.white,
                           ),

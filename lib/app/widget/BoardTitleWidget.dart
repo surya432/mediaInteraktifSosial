@@ -16,17 +16,16 @@ class BoardTitleWidget extends StatelessWidget {
     precacheImage(new AssetImage("assets/images/BG02-01.jpg"), Get.context);
     return Container(
       // color: Colors.amberAccent,
-      height: context.isTablet ? Get.height * 0.7 : Get.height * 0.8,
+      height: context.isTablet ? Get.height * 0.85 : Get.height * 0.85,
       child: Center(
           child: Stack(
         alignment: Alignment.center,
         children: [
           Container(
-            height: context.isTablet ? Get.height * 0.7 : Get.height * 0.8,
+            height: context.isTablet ? Get.height * 0.85 : Get.height * 0.85,
             padding: EdgeInsets.only(
-                left:16,
+                left: 16,
                 right: 16,
-                bottom: 16,
                 top: context.isTablet
                     ? Get.height * 0.1 / 2
                     : Get.height * 0.2 / 2),

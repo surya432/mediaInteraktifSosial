@@ -88,14 +88,17 @@ class WidgetDampakPositif1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Modernisasi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Modernisasi".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
@@ -105,7 +108,7 @@ class WidgetDampakPositif1 extends StatelessWidget {
                   "3) Terlibat dalam perencanaan dan organisasi.\n" +
                   "4) Memiliki kepercayaan, untuk keunggulan ilmu pengetahuan dan teknologi.\n",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -114,7 +117,7 @@ class WidgetDampakPositif1 extends StatelessWidget {
             Text(
               "Modernisasi dalam masyarakat tidak hanya terjadi di bidang iptek. Modernisasi juga dapat terjadi di bidang lain seperti ekonomi, sosial, politik, dan budaya. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -138,20 +141,23 @@ class WidgetDampakPositif2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Efisiensi dalam kehidupan Masyarakat",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Efisiensi dalam kehidupan Masyarakat".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan sosial dapat mendorong kehidupan masyarakat lebih efisien. Efisien berarti upaya masyarakat memenuhi kebutuhan hidup dengan lebih hemat serta tidak membuang waktu, tenaga, dan biaya. Perubahan sosial yang mendorong proses efisiensi berkaitan dengan perkembangan teknologi.  Seperti penggunaan aplikasi ojek online, dengan Munculnya sistem ojek online meningkatkan efektivitas dan efisiensi masyarakat.  ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -175,20 +181,23 @@ class WidgetDampakPositif3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Kesejahteraan masyarakat meningkat",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Kesejahteraan masyarakat meningkat".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan sosial meningkatkan kesejahteraan apabila menyebabkan perubahan kondisi kehidupan yang lebih baik. Terdapat tiga indikator kesejahteraan masyarakat, yaitu adanya peningkatan pendapatan, adanya peningkatan taraf kesehatan keluarga, serta memiliki investasi ekonomi seperti tabungan. Upaya peningkatan kesejahteraan salah satunya dalam proses pemberdayaan masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -212,20 +221,23 @@ class WidgetDampakPositif4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Integrasi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Integrasi".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Apabila masyarakat beradaptasi, berakulturasi, atau berasimilasi terhadap kebudayaan baru akan mendorong terjadinya integrasi. Integrasi diartikan sebagai pembauran hingga menjadi kesatuan yang utuh. Integrasi dapat terjadi pada dua atau lebih budaya, Integrasi dalam perubahan sosial dapat ditunjukkan dengan proses akulturasi dan asimilasi dalam masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -249,20 +261,23 @@ class WidgetDampakPositif5 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Transformasi Politik",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Transformasi Politik".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Tranformasi politik merupakan proses perubahan politik suatu negara. Transformasi politik menyebabkan perubahan-perubahan yang bersifat mendasar. Seperti, pergantian presiden dan wakil presiden, pergantian kebijakan politik, serta pergantian sistem pemerintahan negara. Indonesia mengalami perubahan sistem pemerintahan dari struktur politik otoriter menuju demokrasi. Perubahan tersebut berpengaruh di bidang politik dan juga bidang-bidang lainnya.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

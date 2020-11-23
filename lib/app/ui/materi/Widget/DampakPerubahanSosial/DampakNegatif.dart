@@ -90,20 +90,23 @@ class WidgetDampakNegatif1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Culture shock",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Culture shock".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Culture shock merupakan keadaan masyarakat yang merasa kebingungan terhadap kebudayaannya. Kondisi tersebut disebabkan oleh perubahan yang terjadi dalam waktu singkat dan membingungkan masyarakat. Terdapat tiga dimensi kebingungan yang akan dialami masyarakat ketika mengalami culture shock yaitu: Dimensi affective, Dimensi behavior, Dimensi cognitive.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -127,20 +130,23 @@ class WidgetDampakNegatif2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Kesenjangan Budaya (Cultural Lag)",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Kesenjangan Budaya (Cultural Lag)".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Cultural lag merupakan pertumbuhan kebudayaan yang tidak selalu sama cepat dalam keseluruhan unsur budaya lainnya. Artinya, ada kebudayaan yang tumbuh secara cepat dan ada pula bagian lain yang pertumbuhannya secara lambat. Konsep kesenjangan budaya mengacu pada kecenderungan dari kebiasaan sosial dan pola organisasi sosial yang tertinggal di perubahan dalam kebudayaan materiel. Akibatnya, perubahan sosial selalu ditandai dengan ketegangan antara kebudayaan materiel dan nonmateriel.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -164,20 +170,23 @@ class WidgetDampakNegatif3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Anomi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Anomi".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Anomi adalah istilah yang diperkenalkan oleh Emile Durkheim untuk menggambarkan keadaan kacau tanpa peraturan. Anomi adalah suatu keadaan tanpa peraturan/norma. Keadaan tanpa peraturan tersebut dapat disebabkan oleh perubahan sosial. Seperti, Perang menyebabkan nilai dan norma masyarakat memudar karena lembaga sosial tidak berfungsi optimal. Dan masyarakat belum menciptakan nilai dan norma baru yang berfungsi sebagai pedoman berperilaku. Kondisi inilah yang disebut anomi. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -201,20 +210,23 @@ class WidgetDampakNegatif4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Disorganisasi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Disorganisasi".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Disorganisasi diartikan sebagai keadaan tanpa aturan karena adanya perubahan pada lembaga sosial tertentu, yang menyebabkan pudarnya nilai dan norma sosial oleh perubahan sosial dalam masyarakat. Pudarnya nilai dan norma sosial yang dipengaruhi oleh perubahan sosial dapat terjadi akibat masuknya kebudayaan dari luar. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -238,20 +250,23 @@ class WidgetDampakNegatif5 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Pudarnya solidaritas sosial",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Pudarnya solidaritas sosial".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Solidaritas merupakan aspek penting di kehidupan masyarakat. Dengan adanya solidaritas, hubungan sosial antar masyarakat terjalin dengan baik. Tetapi, di kehidupan masyarakat modern mulai menunjukkan kecenderungan pudarnya solidaritas sosial. Masyarakat modern mementingkan kesibukan pribadi hingga sosialisasi sekitar sering terabaikan. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -275,20 +290,23 @@ class WidgetDampakNegatif6 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Peningkatan tindak kriminalitas",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Peningkatan tindak kriminalitas".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Kriminalitas merupakan dampak perubahan sosial yang tidak diinginkan. Peningkatan tindak kriminalitas terjadi akibat ketidakmampuan masyarakat menemukan solusi menghadapi perubahan sosial dalam kehidupannya. Kondisi demikian memberikan beban psikologis bagi seseorang untuk dapat mencari solusi dalam mengatasi kesulitan. Keinginan untuk segera terbebas dari kesulitan tidak imbang dengan kuatnya iman mendorong individu melakukan tindak kriminal.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -312,20 +330,23 @@ class WidgetDampakNegatif7 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Pencemaran Lingkungan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Pencemaran Lingkungan".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Hasil penemuan baru (discovery) dan invention mendorong pengembangan produk atau alat yang semakin memudahkan kehidupan masyarakat. Tetapi, penemuan baru dapat menyebabkan timbulnya masalah sosial seperti plastik. Plastik merupakan salah satu penemuan tetapi penggunaan yang tidak bijak dapat menimbulkan permasalahan. Sampah plastik yang tidak terurai menimbulkan masalah baru dan menyebabkan bencana banjir. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -349,20 +370,23 @@ class WidgetDampakNegatif8 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Marginalisasi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Marginalisasi".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Marginalisasi merujuk pada orang yang mengalami pembatasan terhadap berbagai aspek kehidupan hingga berada pada pinggiran (terabaikan sistem dalam masyarakat). Marginalisasi terjadi ketika suatu kelompok masyarakat tidak dapat mengakomodasi proses perubahan sosial. Seperti proses industrialisasi. Industrialisasi tentu membawa dampak positif bagi masyarakat, dan dampak negatif menyebabkan beralihnya fungsi lahan produktif pertanian. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

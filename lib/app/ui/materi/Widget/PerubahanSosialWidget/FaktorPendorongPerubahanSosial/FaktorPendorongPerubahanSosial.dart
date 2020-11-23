@@ -87,20 +87,23 @@ class WidgetFaktorPendorong1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "1. Sikap mudah menerima hal hal baru",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "1. Sikap mudah menerima hal hal baru".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Sikap terbuka terhadap hal hal baru dapat mendorong perubahan sosial, dengan sikap terbuka, masyarakat belajar mengenai hal hal baru. Dalam perkembangannya, sikap seperti ini dapat mendorong perubahan sosial dalam masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -114,7 +117,7 @@ class WidgetFaktorPendorong1 extends StatelessWidget {
             Text(
               "“Maraknya penggunaan tongsis, tren global dalam berfoto di media sosial”",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -138,20 +141,23 @@ class WidgetFaktorPendorong2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "2. Orientasi masa depan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Orientasi masa depan".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Orientasi masa depan menunjukkan manusia memikirkan kehidupan mereka pada waktu yang akan datang. Orientasi pada masa depan mendorong individu memiliki sikap optimis dan selalu berfikir positif dalam menghadapi kehidupan. Sikap optimis mendorong individu untuk menjadi pribadi yang lebih baik, oleh karena itu, sikap optimis masyarakat selalu menunjukkan keinginan untuk maju. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -175,20 +181,23 @@ class WidgetFaktorPendorong3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "3. Kontak dengan kebudayaan lain.",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Kontak dengan kebudayaan lain.".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Pemberian penghargaan atau apresiasi dapat mendorong terciptanya penemuan baru atau melakukan suatu gerakan sosial yang dapat menciptakan perubahan sosial. Menghargai karya orang lain dapat menyebabkan terjadinya perubahan sosial yang mampu membawah masyarakat pada taraf kehidupan yang lebih baik. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -212,20 +221,24 @@ class WidgetFaktorPendorong4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "4. Sikap menghargai karya orang lain dan keinginan untuk maju.",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Sikap menghargai karya orang lain dan keinginan untuk maju."
+                    .toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Kontak dengan kebudayaan lain menunjukkan terjadinya hubungan sosial antar masyarakat. Hubungan sosial dengan masyarakat lain dapat menyebarkan unsur kebudayaan dan memberikan peluang bagi kebudayaan lain masuk dalam kehidupan masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -239,7 +252,7 @@ class WidgetFaktorPendorong4 extends StatelessWidget {
             Text(
               "“Pemberian piagam, Piala dan Hadiah pada pemenang lomba”",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -263,14 +276,18 @@ class WidgetFaktorPendorong5 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "5. Keinginan manusia untuk memperbaiki kehidupannya.",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Keinginan manusia untuk memperbaiki kehidupannya."
+                    .toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Align(
@@ -281,7 +298,7 @@ class WidgetFaktorPendorong5 extends StatelessWidget {
             Text(
               "“Job seeker di Job fair yang diadakan oleh pemerintah maupun lembaga swasta”",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -290,7 +307,7 @@ class WidgetFaktorPendorong5 extends StatelessWidget {
             Text(
               "Dengan banyaknya manusia mencari kerja untuk memperbaiki kehidupannya, keinginan manusia memperbaiki kehidupan didasari oleh nilai hidup dan kepercayaan kepada Tuhan YME akan mengubah nasib manusia jika mau berusaha lebih baik dalam kehidupannya. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -314,20 +331,23 @@ class WidgetFaktorPendorong6 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "6. Majunya sistem pendidikan.",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Majunya sistem pendidikan.".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Pendidikan merupakan pembelajaran pengetahuan, keterampilan, dan kebiasaana dari satu generasi ke generasi selanjutnya melalui pengajaran, pelatihan, serta penelitian, pendidikan yang didukung dengan sistem yang sesuai dan tepat dapat mendorong perubahan sosial.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -336,7 +356,7 @@ class WidgetFaktorPendorong6 extends StatelessWidget {
             Text(
               "Contoh: Perubahan kurikulum yang disesuaikan dengan perkembangan zaman. Perubahan kurikulum dilakukan agar pendidikan sesuai dengan kemajuan zaman. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -360,20 +380,23 @@ class WidgetFaktorPendorong7 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "7. Penduduk heterogen",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Penduduk heterogen".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Stratifikasi sosial terbuka memungkinkan adanya gerak sosial vertikal atau horizontal pada masyarakat. Sistem stratifikasi sosial terbuka memberi peluang bagi individu dan kelompok untuk menduduki lapisan masyarakat yang diinginkan. Proses ini mendorong terjadi perubahan sosial, Sistem ini dianut oleh masyarakat modern. Semakin modern suatu masyarakat, pelapisan sosialnya juga semakin terbuka.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -397,20 +420,23 @@ class WidgetFaktorPendorong8 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "8. Toleransi terhadap perilaku menyimpang",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Toleransi terhadap perilaku menyimpang".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Masyarakat pedalaman percaya setiap penyakit datang dari roh jahat dan mereka menggunakan ritual dukun untuk mengobatinya. Anggapan dan prosesi pengobatan tersebut tentu kurang tepat secara medis. Hal diatas merupakan perilaku menyimpang melanggar nilai dan norma dalam masyarakat, maka setiap dengan itu harus adanya sikap toleransi dan kemudian diarahkan ke perilaku yang lebih sesuai. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -434,20 +460,24 @@ class WidgetFaktorPendorong9 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "9. Sistem stratifikasi sosial terbuka (open social stratification)",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Sistem stratifikasi sosial terbuka (open social stratification)"
+                    .toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Masyarakat pedalaman percaya setiap penyakit datang dari roh jahat dan mereka menggunakan ritual dukun untuk mengobatinya. Anggapan dan prosesi pengobatan tersebut tentu kurang tepat secara medis. Hal diatas merupakan perilaku menyimpang melanggar nilai dan norma dalam masyarakat, maka setiap dengan itu harus adanya sikap toleransi dan kemudian diarahkan ke perilaku yang lebih sesuai. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

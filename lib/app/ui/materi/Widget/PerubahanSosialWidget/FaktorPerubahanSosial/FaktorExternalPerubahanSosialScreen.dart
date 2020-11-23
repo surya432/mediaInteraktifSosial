@@ -91,20 +91,23 @@ class WidgetFaktorExternalPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan lingkungan fisik",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan lingkungan fisik".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan yang disebabkan oleh lingkungan alam fisik berupa bencana alam seperti banjir, gunung meletus, gempa bumi, angin topan, dan juga disebabkan tindakan manusia yang tidak terkontrol sehingga merusak lingkungan, seperti penebangan hutan secara liar yang menyebabkan bencana tanah longsor.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,20 +131,23 @@ class WidgetFaktorExternalPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Masuknya kebudayaan dari masyarakat lain",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Masuknya kebudayaan dari masyarakat lain".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Masuknya pengaruh kebudayaan masyarakat lain terjadi karena hubungan fisik antara dua masyarakat, yang diikuti adanya pengaruh timbal balik sehingga setiap masyarakat akan mengalami perubahan. Masuknya pengaruh kebudayaan masyarakat lain juga terjadi secara sepihak, misalnya melalui media massa (siaran TV), masyarakat pemirsa siaran TV dapat terpengaruh oleh siaran yang ditayangkan",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -165,20 +171,23 @@ class WidgetFaktorExternalPerubahanSosial3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Terjandinya peperangan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Terjandinya peperangan".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Terjadinya peperangan antar negara dapat mengakibatkan perubahan bagi negara yang mengalami kekalahan, karena negara yang kalah akan menjadi negara terjajah dan harus mengikuti pola kehidupan politik baru sesuai dengan kehendak negara yang memenangkan peperangan tersebut. Karena negara yang menang biasanya akan memaksakan kehendaknya pada negara yang kalah.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

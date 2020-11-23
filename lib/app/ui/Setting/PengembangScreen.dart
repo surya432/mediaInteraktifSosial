@@ -44,23 +44,25 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("Nama",
                                           style: TextStyle(
-                                            fontSize: 16,
+                                            ////fontSize: 16,
                                             color: Colors.white,
                                             fontFamily: "Gothic",
                                           )),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                          fontSize: 16,
+                                          // //fontSize: 16,
                                           color: Colors.white,
                                           fontFamily: "Gothic",
                                         )),
-                                    Text("Hamdallah Firstya S",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontFamily: "Gothic",
-                                        )),
+                                    Expanded(
+                                      child: Text("Hamdallah Firstya S",
+                                          style: TextStyle(
+                                            // //fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: "Gothic",
+                                          )),
+                                    ),
                                   ],
                                 ),
                                 Row(
@@ -70,23 +72,25 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("NIM",
                                           style: TextStyle(
-                                            fontSize: 16,
+                                            ////fontSize: 16,
                                             color: Colors.white,
                                             fontFamily: "Gothic",
                                           )),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                          fontSize: 16,
+                                          ////fontSize: 16,
                                           color: Colors.white,
                                           fontFamily: "Gothic",
                                         )),
-                                    Text("17010024074",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontFamily: "Gothic",
-                                        )),
+                                    Expanded(
+                                      child: Text("17010024074",
+                                          style: TextStyle(
+                                            ////fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: "Gothic",
+                                          )),
+                                    ),
                                   ],
                                 ),
                                 Row(
@@ -96,23 +100,26 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("Jurusan",
                                           style: TextStyle(
-                                            fontSize: 16,
+                                            ////fontSize: 16,
                                             color: Colors.white,
                                             fontFamily: "Gothic",
                                           )),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                          fontSize: 16,
+                                          ////fontSize: 16,
                                           color: Colors.white,
                                           fontFamily: "Gothic",
                                         )),
-                                    Text("Kurikulum dan Teknologi Pendidikan",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontFamily: "Gothic",
-                                        )),
+                                    Expanded(
+                                      child: Text(
+                                          "Kurikulum dan Teknologi Pendidikan",
+                                          style: TextStyle(
+                                            ////fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: "Gothic",
+                                          )),
+                                    ),
                                   ],
                                 ),
                                 Row(
@@ -122,21 +129,23 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("Falkultas",
                                           style: TextStyle(
-                                              fontSize: 16,
+                                              ////fontSize: 16,
                                               color: Colors.white)),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                          fontSize: 16,
+                                          ////fontSize: 16,
                                           color: Colors.white,
                                           fontFamily: "Gothic",
                                         )),
-                                    Text("Ilmu Pendidikan",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontFamily: "Gothic",
-                                        )),
+                                    Expanded(
+                                      child: Text("Ilmu Pendidikan",
+                                          style: TextStyle(
+                                            ////fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: "Gothic",
+                                          )),
+                                    ),
                                   ],
                                 ),
                                 Row(
@@ -146,20 +155,25 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("Email",
                                           style: TextStyle(
-                                            fontSize: 16,
+                                            ////fontSize: 16,
                                             color: Colors.white,
                                             fontFamily: "Gothic",
                                           )),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                            fontSize: 16, color: Colors.white)),
-                                    Text("Hamdallahfirstya27@gmail.com",
-                                        style: TextStyle(
-                                          fontSize: 16,
+                                          //fontSize: 16,
                                           color: Colors.white,
-                                          fontFamily: "Gothic",
                                         )),
+                                    Expanded(
+                                      child:
+                                          Text("Hamdallahfirstya27@gmail.com",
+                                              style: TextStyle(
+                                                ////fontSize: 16,
+                                                color: Colors.white,
+                                                fontFamily: "Gothic",
+                                              )),
+                                    ),
                                   ],
                                 ),
                                 Row(
@@ -169,23 +183,25 @@ class PengembangScreen extends StatelessWidget {
                                       width: 70,
                                       child: Text("No. Telp",
                                           style: TextStyle(
-                                            fontSize: 16,
+                                            ////fontSize: 16,
                                             color: Colors.white,
                                             fontFamily: "Gothic",
                                           )),
                                     ),
                                     Text(" : ",
                                         style: TextStyle(
-                                          fontSize: 16,
+                                          ////fontSize: 16,
                                           color: Colors.white,
                                           fontFamily: "Gothic",
                                         )),
-                                    Text("081335968881",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontFamily: "Gothic",
-                                        )),
+                                    Expanded(
+                                      child: Text("081335968881",
+                                          style: TextStyle(
+                                            ////fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: "Gothic",
+                                          )),
+                                    ),
                                   ],
                                 ),
                               ],

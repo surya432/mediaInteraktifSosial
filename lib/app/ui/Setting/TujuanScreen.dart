@@ -19,20 +19,16 @@ class TujuanScreen extends StatelessWidget {
           widgetContent: Container(
             padding:
                 const EdgeInsets.only(top: 20, left: 8, right: 8, bottom: 8),
-            child: Center(
+            child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: context.isTablet
-                        ? Get.height * 0.1 / 2
-                        : Get.height * 0.2 / 2,
-                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("1.",
                           style: TextStyle(
-                            fontSize: 16,
+                            //fontSize: 16,
                             color: Colors.white,
                             fontFamily: "Gothic",
                           )),
@@ -44,7 +40,7 @@ class TujuanScreen extends StatelessWidget {
                         child: Text(
                             "Setelah menggunakan multimedia interaktif siswa kelas XII SMA dapat memahami konsep perubahan Sosial dengan tepat.",
                             style: TextStyle(
-                              fontSize: 16,
+                              //fontSize: 16,
                               color: Colors.white,
                               fontFamily: "Gothic",
                             )),
@@ -57,8 +53,7 @@ class TujuanScreen extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("2.",
-                          style: TextStyle(fontSize: 16, color: Colors.white)),
+                      Text("2.", style: TextStyle(color: Colors.white)),
                       SizedBox(
                         width: 8,
                       ),
@@ -67,7 +62,7 @@ class TujuanScreen extends StatelessWidget {
                         child: Text(
                             "Setelah menggunakan multimedia interaktif siswa kelas XII SMA dapat memahami bentuk perubahan Sosial dengan tepat.",
                             style: TextStyle(
-                              fontSize: 16,
+                              //fontSize: 16,
                               color: Colors.white,
                               fontFamily: "Gothic",
                             )),
@@ -82,7 +77,7 @@ class TujuanScreen extends StatelessWidget {
                     children: [
                       Text("3.",
                           style: TextStyle(
-                            fontSize: 16,
+                            //fontSize: 16,
                             color: Colors.white,
                             fontFamily: "Gothic",
                           )),
@@ -94,7 +89,7 @@ class TujuanScreen extends StatelessWidget {
                         child: Text(
                             "Setelah menggunakan multimedia interaktif siswa kelas XII SMA dapat memahami dampak positif dan negatif perubahan Sosial dengan tepat.",
                             style: TextStyle(
-                              fontSize: 16,
+                              //fontSize: 16,
                               color: Colors.white,
                               fontFamily: "Gothic",
                             )),

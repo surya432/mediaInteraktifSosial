@@ -91,20 +91,23 @@ class WidgetSifatPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan Struktural",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan Struktural".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan struktural merupakan perubahan yang bersifat mendasar sehingga menyebabkan reorganisasi atau tata ulang struktur dalam masyarakat. Perubahan struktural merupakan suatu proses sosial yang mampu menciptakan dan menghasilkan perubahan pada hubungan sosial yang terorganisasi dalam suatu lembaga kemasyarakatan dan melibatkan anggota masyarakat, seperti perubahan sistem dan struktur pemerintahan negara.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,20 +131,23 @@ class WidgetSifatPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan proses (tidak mendasar)",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan proses (tidak mendasar)".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan proses merupakan perubahan yang sifatnya tidak mendasar. Perubahan tersebut hanya menyempurnakan perubahan yang sebelumnya sudah ada. Seperti perubahan pada sistem pendaftaran sekolah. Dahulu bagi peserta didik yang ingin mendaftar sekolah harus datang ke sekolah yang dituju. Proses PPDB dilakukan secara online, mulai dari pendaftaran, proses seleksi, hingga pengumuman hasil seleksi. Dan juga pemberlakuan sistem zonasi, peserta hanya dapat mendaftar sekolah si zona tempat tinggalnya.  ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

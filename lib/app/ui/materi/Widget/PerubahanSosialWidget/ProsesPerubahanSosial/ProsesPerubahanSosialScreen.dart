@@ -91,20 +91,23 @@ class WidgetperubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "ASIMILASI",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "ASIMILASI",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Asimilasi merupakan proses pembauran dua kebudayaan disertai hilangnya ciri khas kebudayaan asli sehingga membentuk kebudayaan baru. Asimilasi akan terjadi jika terdapat beberapa faktor yaitu: ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -116,7 +119,7 @@ class WidgetperubahanSosial1 extends StatelessWidget {
                   "• Saling bergaul langsung secara intensif untuk waktu yang lama\n" +
                   "• Kebudayaan-kebudayaan golongan-golongan tadi masingmasing berubah sifatnya yang khas, dan juga unsurunsurnya berubah wujudnya menjadi unsur-unsur kebudayaan campuran.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -140,20 +143,23 @@ class WidgetperubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Difusi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "DEFUSI",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Difusi merupakan suatu proses penyebaran kebudayaan dari satu lingkup kebudayaan ke lingkup kebudayaan yang lain melalui teknik meniru atau imitasi. Contohnya penyebaran kosa kata asing yang mengubah bahasa Indonesia menjadi lebih modern yaitu gerilyawan, ilmuwan, dan pancasilais. Penyerapan kosa kata baru itulah yang disebut dengan difusi. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -177,20 +183,23 @@ class WidgetperubahanSosial3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Akulturasi",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Akulturasi".toUpperCase(),
+                style: TextStyle(
+                  //fontSize: 24,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.justify,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Akulturasi merupakan proses perpaduan dua kebudayaan atau lebih yang menghasilkan budaya baru tanpa menghilangkan unsur-unsur budaya tersebut. Contoh dari akulturasi sendiri adalah baju koko, dikarenakan baju koko merupakan perpaduan budaya tiongkok dan Indonesia, perpaduan kedua unsur budaya terjadi sejak bangsa tiongkok melakukan perdagangan di Nusantara.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

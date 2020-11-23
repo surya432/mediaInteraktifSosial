@@ -29,14 +29,14 @@ class QuizScreen extends StatelessWidget {
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/QuizSub1"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset("assets/button/headtitle-61.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
                         onTap: () => Get.toNamed("/QuizSub2"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset("assets/button/headtitle-62.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
@@ -50,7 +50,7 @@ class QuizScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () =>
                             Get.toNamed("/DAMPAKPOSITIFPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset("assets/button/headtitle-63.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
@@ -58,7 +58,7 @@ class QuizScreen extends StatelessWidget {
                           child: GestureDetector(
                         onTap: () =>
                             Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
-                        child: Image.asset("assets/button/btn-05.png",
+                        child: Image.asset("assets/button/headtitle-64.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),

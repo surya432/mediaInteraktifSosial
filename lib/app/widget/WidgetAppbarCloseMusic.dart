@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mediaintersosial/app/ui/Home/HomeController.dart';
 
 class WidgetAppbarCloseMusic extends StatelessWidget {
   const WidgetAppbarCloseMusic({
@@ -12,14 +13,14 @@ class WidgetAppbarCloseMusic extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         GestureDetector(
-          onTap: () => {},
-          child: Image.asset("assets/button/btn-03.png",
-              height: context.height * 0.12, width: context.height * 0.12),
+          onTap: () => Get.back(),
+          child: Image.asset("assets/button/btn-10.png",
+              height: context.height * 0.1, width: context.height * 0.1),
         ),
         GestureDetector(
-          onTap: () => Get.back(),
-          child: Image.asset("assets/button/btn-05.png",
-              height: context.height * 0.12, width: context.height * 0.12),
+          onTap: () => Get.find<HomeController>().playMusic(),
+          child: Obx(() => Image.asset(Get.find<HomeController>().getImagesPlay,
+              height: context.height * 0.1, width: context.height * 0.1)),
         ),
       ],
     );

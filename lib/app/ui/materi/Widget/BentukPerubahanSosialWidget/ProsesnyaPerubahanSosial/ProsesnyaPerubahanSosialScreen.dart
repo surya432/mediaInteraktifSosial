@@ -16,7 +16,6 @@ class ProsesnyaPerubahanSosialScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: GetX<PerubahanSosialController>(
-            init: PerubahanSosialController(),
             initState: (state) => Get.find<PerubahanSosialController>()
                 .initProsesnyaPerubahanSosial(),
             builder: (PerubahanSosialController controller) {
@@ -91,20 +90,23 @@ class WidgetProsesnyaPerubahanSosial1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan yang direncanakan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan yang direncanakan".toUpperCase(),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Text(
               "Perubahan yang direncanakan (planned change) merupakan perubahan yang direncanakan terlebih dahulu oleh pihak yang melakukan perubahan sosial dalam masyarakat. Perubahan yang direncanakan atau dikehendaki dapat direncanakan melalui program-program tertentu. Seperti perubahan kurikulum 2006 KTSP menjadi kurikulum 2013",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -128,14 +130,17 @@ class WidgetProsesnyaPerubahanSosial2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Perubahan tidak direncanakan",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontFamily: "Gothic",
+            Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Perubahan tidak direncanakan",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.justify,
             ),
             SizedBox(height: 16),
             Align(
@@ -146,7 +151,7 @@ class WidgetProsesnyaPerubahanSosial2 extends StatelessWidget {
             Text(
               "Kebakaran, menyebabkan beragam perubahan dalam kehidupan masyarakat. Kebakaran merupakan perubahan yang terjadi tanpa perencanaan yang terjadi diluar perkiraan masyarakat. Perubahan ini cenderung berdampak negatif dikarenakan perubahaanya tidak dikehendaki masyarakat. ",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

@@ -24,13 +24,13 @@ class DampakPerubahanSosialScreen extends StatelessWidget {
                   Expanded(
                       child: GestureDetector(
                     onTap: () => Get.toNamed("/DAMPAKPOSITIFPERUBAHANSOSIAL"),
-                    child: Image.asset("assets/button/btn-05.png",
+                    child: Image.asset("assets/materi/Dampak/headtitle-59.png",
                         height: context.height * .1, width: context.width * .3),
                   )),
                   Expanded(
                       child: GestureDetector(
                     onTap: () => Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
-                    child: Image.asset("assets/button/btn-05.png",
+                    child: Image.asset("assets/materi/Dampak/headtitle-60.png",
                         height: context.height * .1, width: context.width * .3),
                   )),
                 ],

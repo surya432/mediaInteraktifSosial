@@ -91,7 +91,7 @@ class WidgetMateri1 extends StatelessWidget {
           Text(
             "Perubahan sosial merupakan fenomena kehidupan yang dialami oleh setiap masyarakat di manapun dan kapan pun. Setiap masyarakat manusia selama hidupnya pasti mengalami perubahan-perubahan dalam berbagai aspek kehidupannya, yang terjadi di tengah-tengah pergaulan (interaksi) antara sesama individu warga masyarakat, demikian pula antara masyarakat dengan lingkungan hidupnya",
             style: TextStyle(
-              fontSize: 20,
+              //fontSize: 20,
               color: Colors.white,
               fontFamily: "Gothic",
             ),
@@ -123,16 +123,14 @@ class WidgetMateri2 extends StatelessWidget {
                     onTap: () => Get.to(PerubahanSosialScreen(),
                         transition: Transition.leftToRight),
                     child: Image.asset("assets/materi/headtitle-34.png",
-                        height: context.height * .15,
-                        width: context.width * .25),
+                        height: context.height * .1, width: context.width * .3),
                   ),
                 ),
                 Center(
                   child: GestureDetector(
                     onTap: () => Get.to(BentukPerubahanSosialScreen()),
                     child: Image.asset("assets/materi/headtitle-35.png",
-                        height: context.height * .15,
-                        width: context.width * .25),
+                        height: context.height * .1, width: context.width * .3),
                   ),
                 ),
               ],
@@ -141,7 +139,7 @@ class WidgetMateri2 extends StatelessWidget {
             GestureDetector(
               onTap: () => Get.to(DampakPerubahanSosialScreen()),
               child: Image.asset("assets/materi/headtitle-36.png",
-                  height: context.height * .15, width: context.width * .25),
+                  height: context.height * .1, width: context.width * .3),
             ),
           ],
         ),

@@ -108,6 +108,10 @@ class PerubahanSosialController extends GetxController {
         "images": "assets/slide/headtitle-49.png"
       },
       {
+        "route": WidgetFaktorPendorong5(),
+        "images": "assets/slide/headtitle-49.png"
+      },
+      {
         "route": WidgetFaktorPendorong6(),
         "images": "assets/slide/headtitle-49.png"
       },
@@ -144,6 +148,22 @@ class PerubahanSosialController extends GetxController {
       },
       {
         "route": WidgetFaktorPenghambat4(),
+        "images": "assets/slide/headtitle-51.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat5(),
+        "images": "assets/slide/headtitle-51.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat6(),
+        "images": "assets/slide/headtitle-51.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat7(),
+        "images": "assets/slide/headtitle-51.png"
+      },
+      {
+        "route": WidgetFaktorPenghambat8(),
         "images": "assets/slide/headtitle-51.png"
       },
     ]);
@@ -193,11 +213,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetUkuranPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       },
       {
         "route": WidgetUkuranPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       }
     ]);
   }
@@ -208,11 +228,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetKecepatanPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       },
       {
         "route": WidgetKecepatanPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       }
     ]);
   }
@@ -223,11 +243,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetSifatPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       },
       {
         "route": WidgetSifatPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       }
     ]);
   }
@@ -238,11 +258,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetArahPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       },
       {
         "route": WidgetArahPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       }
     ]);
   }
@@ -253,11 +273,11 @@ class PerubahanSosialController extends GetxController {
     menuList.assignAll([
       {
         "route": WidgetProsesnyaPerubahanSosial1(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       },
       {
         "route": WidgetProsesnyaPerubahanSosial2(),
-        "images": "assets/button/btn-05.png"
+        "images": "assets/materi/headtitle-38.png"
       }
     ]);
   }
@@ -266,11 +286,26 @@ class PerubahanSosialController extends GetxController {
     pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
-      {"route": WidgetDampakPositif1(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakPositif2(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakPositif3(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakPositif4(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakPositif5(), "images": "assets/button/btn-05.png"}
+      {
+        "route": WidgetDampakPositif1(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakPositif2(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakPositif3(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakPositif4(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakPositif5(),
+        "images": "assets/materi/headtitle-39.png"
+      }
     ]);
   }
 
@@ -278,14 +313,38 @@ class PerubahanSosialController extends GetxController {
     pageIndex.value = 0;
     menuList.clear();
     menuList.assignAll([
-      {"route": WidgetDampakNegatif1(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif2(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif3(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif4(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif5(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif6(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif7(), "images": "assets/button/btn-05.png"},
-      {"route": WidgetDampakNegatif8(), "images": "assets/button/btn-05.png"}
+      {
+        "route": WidgetDampakNegatif1(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif2(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif3(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif4(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif5(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif6(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif7(),
+        "images": "assets/materi/headtitle-39.png"
+      },
+      {
+        "route": WidgetDampakNegatif8(),
+        "images": "assets/materi/headtitle-39.png"
+      }
     ]);
   }
 }

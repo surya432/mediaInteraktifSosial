@@ -93,7 +93,7 @@ class WidgetAgenPerubahanSosial1 extends StatelessWidget {
             Text(
               "Agen perubahan sosial (agent of change) merupakan orang atau pihak yang memelopori. merencanakan, dan melaksanakan perubahan sosial. Agen perubahan sosial memiliki beragam peran, yaitu:\n",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -105,7 +105,7 @@ class WidgetAgenPerubahanSosial1 extends StatelessWidget {
                   "c. Sebagai pembantu proses perubahan\n" +
                   "d. Sebagai penghubung (linker)",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),
@@ -131,7 +131,7 @@ class WidgetAgenPerubahanSosial2 extends StatelessWidget {
             Text(
               "Agen perubahan sosial cenderung memegang kendali perencanaan, pelaksanaan, dan evaluasi perubahan sosial yang dikehendaki. Melalui perubahan sosial yang dikehendaki, kehidupan masyarakat menjadi lebih maju dan kesejahteraan masyarakat meningkat.",
               style: TextStyle(
-                fontSize: 16,
+                //fontSize: 16,
                 color: Colors.white,
                 fontFamily: "Gothic",
               ),

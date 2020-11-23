@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mediaintersosial/app/ui/Home/HomeScreen.dart';
 
 class SplashScreen2 extends StatefulWidget {
   SplashScreen2({Key key}) : super(key: key);
@@ -26,11 +25,12 @@ class _SplashScreen2State extends State<SplashScreen2>
         //   controller.reverse();
         // } else if (status == AnimationStatus.dismissed) {
         // controller.forward();
-        Get.off(
-          HomeScreen(),
-          // transition: Transition.zoom,
-          // duration: new Duration(milliseconds: 200),
-        );
+        // Get.off(
+        //   HomeScreen(),
+        //   // transition: Transition.zoom,
+        //   // duration: new Duration(milliseconds: 200),
+        // );
+        Get.toNamed("/HOME");
       }
     });
     controller.forward();
@@ -49,7 +49,7 @@ class _SplashScreen2State extends State<SplashScreen2>
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/Unesa.png',
+                'assets/images/tp.png',
                 height: height,
                 width: width,
               ),

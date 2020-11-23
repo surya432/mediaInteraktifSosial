@@ -17,7 +17,7 @@ class SettingScreen extends StatefulWidget {
 
 var menuList = [
   {
-    "images": "assets/menu/headtitle-33.png",
+    "images": "assets/menu/headtitle-30.png",
     "route": KopetensiDasarScreen(),
     "name": "Kopetensi Dasar"
   },
