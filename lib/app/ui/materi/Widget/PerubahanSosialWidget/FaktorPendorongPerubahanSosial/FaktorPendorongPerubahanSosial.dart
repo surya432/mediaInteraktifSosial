@@ -90,7 +90,7 @@ class WidgetFaktorPendorong1 extends StatelessWidget {
             Align(
               alignment: Alignment.topCenter,
               child: Text(
-                "1. Sikap mudah menerima hal hal baru".toUpperCase(),
+                "Sikap mudah menerima hal hal baru".toUpperCase(),
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,

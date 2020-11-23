@@ -146,7 +146,7 @@ class WidgetperubahanSosial2 extends StatelessWidget {
             Align(
               alignment: Alignment.topCenter,
               child: Text(
-                "DEFUSI",
+                "DIFUSI",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,

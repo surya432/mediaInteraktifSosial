@@ -91,7 +91,7 @@ class WidgetMateri1 extends StatelessWidget {
           Text(
             "Perubahan sosial merupakan fenomena kehidupan yang dialami oleh setiap masyarakat di manapun dan kapan pun. Setiap masyarakat manusia selama hidupnya pasti mengalami perubahan-perubahan dalam berbagai aspek kehidupannya, yang terjadi di tengah-tengah pergaulan (interaksi) antara sesama individu warga masyarakat, demikian pula antara masyarakat dengan lingkungan hidupnya",
             style: TextStyle(
-              //fontSize: 20,
+              fontSize: 14,
               color: Colors.white,
               fontFamily: "Gothic",
             ),

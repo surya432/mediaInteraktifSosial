@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mediaintersosial/app/ui/materi/Widget/DampakPerubahanSosial/DampakNegatif.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/WidgetSub1Quiz1.dart';
 
 class QuizController extends GetxController {
   var data = List<Map<dynamic, dynamic>>().obs;
@@ -12,8 +12,8 @@ class QuizController extends GetxController {
 
   @override
   void onInit() {
-    interval(onclickj, (_) => checkanswer(),
-        time: Duration(milliseconds: 2500));
+    // interval(onclickj, (_) => checkanswer(),
+    //     time: Duration(milliseconds: 2500));
     // debounce(onclickj, (_) => checkanswer(),
     //     time: Duration(milliseconds: 2500));
     // debounce(numberQuiz, (_) => nextpertanyaan(),
@@ -33,16 +33,18 @@ class QuizController extends GetxController {
     numberQuiz.value = numberQuiz.value + 1;
     // update();
     if (numberQuiz >= data.length) {
+      numberQuiz.value = 0;
       // Get.off(QuizDoneScreen(), arguments: javabne);
     }
   }
 
   klikjawab(String answer, String jwbbenar) {
-    if (!onclickj.value) {
+    if (onclickj.value == false) {
       print("klik lagi true");
       onclickj.value = true;
       klik.value = answer;
       jawabbenar.value = jwbbenar;
+      new Future.delayed(const Duration(seconds: 2), () => checkanswer());
     } else {
       print("klik lagi false");
     }
@@ -53,41 +55,51 @@ class QuizController extends GetxController {
     data.clear();
     data.assignAll([
       {
-        "route": WidgetDampakNegatif1(),
+        "route": WidgetSubSoal1Quiz1(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif2(),
+        "route": WidgetSubSoal1Quiz2(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif3(),
+        "route": WidgetSubSoal1Quiz3(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif4(),
+        "route": WidgetSubSoal1Quiz4(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif5(),
+        "route": WidgetSubSoal1Quiz5(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif6(),
+        "route": WidgetSubSoal1Quiz6(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif7(),
+        "route": WidgetSubSoal1Quiz7(),
         "images": "assets/kuis/headtitle-17.png"
       },
       {
-        "route": WidgetDampakNegatif8(),
+        "route": WidgetSubSoal1Quiz8(),
         "images": "assets/kuis/headtitle-17.png"
-      }
+      },
+      {
+        "route": WidgetSubSoal1Quiz9(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
+      {
+        "route": WidgetSubSoal1Quiz10(),
+        "images": "assets/kuis/headtitle-17.png"
+      },
     ]);
   }
 
   nextpertanyaan() {
     print(numberQuiz.value);
   }
+
+  initQuiz1() {}
 }

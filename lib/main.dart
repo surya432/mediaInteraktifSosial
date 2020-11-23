@@ -23,7 +23,7 @@ import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/Teor
 import 'package:mediaintersosial/app/ui/materi/binding/MateriBinding.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/PerubahanSosialBinding.dart';
 import 'package:mediaintersosial/app/ui/quiz/binding/QuizBinding.dart';
-import 'package:mediaintersosial/app/ui/quiz/ui/QuizSub1Screen.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/WidgetSub1Quiz1.dart';
 
 void main() {
   ByteDataAssets.instance.basePath = 'assets/images/';
@@ -136,7 +136,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/QuizSub1',
-          page: () => QuizSub1Screen(),
+          page: () => WidgetSub1Quiz1(),
           binding: QuizBinding(),
         )
         // GetPage with custom transitions and bindings
