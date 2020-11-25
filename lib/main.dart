@@ -23,7 +23,10 @@ import 'package:mediaintersosial/app/ui/materi/Widget/PerubahanSosialWidget/Teor
 import 'package:mediaintersosial/app/ui/materi/binding/MateriBinding.dart';
 import 'package:mediaintersosial/app/ui/materi/binding/PerubahanSosialBinding.dart';
 import 'package:mediaintersosial/app/ui/quiz/binding/QuizBinding.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/QuizHarian.dart';
 import 'package:mediaintersosial/app/ui/quiz/ui/WidgetSub1Quiz1.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/WidgetSubQuiz2.dart';
+import 'package:mediaintersosial/app/ui/quiz/ui/WidgetSubQuiz3.dart';
 
 void main() {
   ByteDataAssets.instance.basePath = 'assets/images/';
@@ -46,7 +49,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.rightToLeft,
       transitionDuration: new Duration(milliseconds: 500),
-      title: 'Media Perubahan Sosial',
+      title: 'Perubahan sosial dalam masyarakat',
       theme: buildThemeData(context),
       // theme: ThemeData.dark(),
       initialRoute: '/SPLASH',
@@ -137,6 +140,21 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/QuizSub1',
           page: () => WidgetSub1Quiz1(),
+          binding: QuizBinding(),
+        ),
+        GetPage(
+          name: '/QuizSub2',
+          page: () => WidgetSubQuiz2(),
+          binding: QuizBinding(),
+        ),
+        GetPage(
+          name: '/QuizSub3',
+          page: () => WidgetSubQuiz3(),
+          binding: QuizBinding(),
+        ),
+        GetPage(
+          name: '/QuizSub4',
+          page: () => WidgetQuizHarianScreen(),
           binding: QuizBinding(),
         )
         // GetPage with custom transitions and bindings

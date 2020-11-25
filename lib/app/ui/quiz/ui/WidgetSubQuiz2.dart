@@ -6,8 +6,8 @@ import 'package:mediaintersosial/app/widget/BoardTitleWidget.dart';
 import 'package:mediaintersosial/app/widget/WidgetAnswer.dart';
 import 'package:mediaintersosial/app/widget/WidgetAppbarCloseMusic.dart';
 
-class WidgetSub1Quiz1 extends StatelessWidget {
-  const WidgetSub1Quiz1({Key key}) : super(key: key);
+class WidgetSubQuiz2 extends StatelessWidget {
+  const WidgetSubQuiz2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class WidgetSub1Quiz1 extends StatelessWidget {
       body: Container(
         child: GetX<QuizController>(
           init: QuizController(),
-          initState: (state) => Get.find<QuizController>().initSubSoal1(),
+          initState: (state) => Get.find<QuizController>().initSubSoal2(),
           builder: (QuizController controller) {
             if (controller.numberQuiz.value >= controller.data.length) {
               // String total = _.getTotalBenar.toString();
@@ -53,376 +53,27 @@ class WidgetSub1Quiz1 extends StatelessWidget {
   }
 }
 
-class WidgetSubSoal1Quiz1 extends StatelessWidget {
-  const WidgetSubSoal1Quiz1({Key key}) : super(key: key);
+class WidgetSubSoal2Quiz1 extends StatelessWidget {
+  const WidgetSubSoal2Quiz1({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     QuizController controller = Get.find();
-    String jawabanBenar =
-        "c. Perubahan sosial merupakan perubahan perilaku dan budaya yang signifikan dari waktu ke waktu";
+    String jawabanBenar = "c. Revolusi";
     Map<String, dynamic> quiz = {
-      "pertanyaan":
-          "Pernyataan tepat mengenai konsep perubahan sosial ditunjukkan oleh pilihan….",
-      "jawaban": [
-        "a. Perubahan sosial tidak dipengaruhi oleh kebudayaan dari masyarakat lain",
-        "b. Perubahan sosial hanya dapat dilihat dari pertambahan jumlah penduduk suatu daerah",
-        "c. Perubahan sosial merupakan perubahan perilaku dan budaya yang signifikan dari waktu ke waktu",
-        "d. Perubahan sosial terjadi dalam masyarakat tradisional dan perubahan akan berhenti ketika masyarakat sudah modern",
-        "e. Perubahan sosial ditandai dengan perubahan lingkungan fisik yang dapat dilihat perbedaannya beberapa tahun kemudian"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      // fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            padding: EdgeInsets.only(top: 8),
-            itemCount: quiz['jawaban'].length,
-            itemBuilder: (context, index) {
-              String answer = quiz['jawaban'][index];
-              String jawabannya = jawabanBenar;
-              var icon = jawabannya == answer
-                  ? Image.asset(
-                      "assets/kuis/btn-24.png",
-                      height: 16,
-                      width: 16,
-                    )
-                  : Image.asset(
-                      "assets/button/btn-05.png",
-                      height: 16,
-                      width: 16,
-                    );
-              return Padding(
-                padding: const EdgeInsets.only(left: 20, bottom: 4),
-                child: GestureDetector(
-                  onTap: () => controller.klikjawab(answer, jawabanBenar),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        flex: 4,
-                        child: Text(
-                          answer,
-                          style: TextStyle(
-                            // fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      GetX<QuizController>(
-                        builder: (controller) {
-                          if (controller.onclickj.value) {
-                            return icon;
-                          } else {
-                            return Container();
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz2 extends StatelessWidget {
-  const WidgetSubSoal1Quiz2({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar =
-        "a. Suku Minang memberi bantuan kepada Suku Padang yang sedang mengalami musibah";
-    Map<String, dynamic> quiz = {
-      "pertanyaan":
-          "Untuk mencapai proses asimilisi diperlukan sikap toleransi dan simpati dari kedua kelompok masyarakat yang berbeda. Contoh sikap yang mendukung proses asimilasi dalam mewujudkan perubahan sosial adalah….",
-      "jawaban": [
-        "a. Suku Minang memberi bantuan kepada Suku Padang yang sedang mengalami musibah",
-        "b. Desa Rejo menyerang Desa Turi demi mempertahankan solidaritas kelompok.",
-        "c. Yuliana tidak melanjutkan pendidikan karena keterbatasan ekonomi",
-        "d. Budi jarang berinteraksi dengan ucok yang berasal dari daerah lain",
-        "e. Doni bersikeras ingin memperoleh pekerjaan didaerah asalnya"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            padding: EdgeInsets.only(top: 8),
-            itemCount: quiz['jawaban'].length,
-            itemBuilder: (context, index) {
-              String answer = quiz['jawaban'][index];
-              String jawabannya = jawabanBenar;
-              var icon = jawabannya == answer
-                  ? Image.asset(
-                      "assets/kuis/btn-24.png",
-                      height: 16,
-                      width: 16,
-                    )
-                  : Image.asset(
-                      "assets/button/btn-05.png",
-                      height: 16,
-                      width: 16,
-                    );
-              return Padding(
-                padding: const EdgeInsets.only(left: 20, bottom: 4),
-                child: GestureDetector(
-                  onTap: () => controller.klikjawab(answer, jawabanBenar),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        flex: 4,
-                        child: Text(
-                          answer,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      GetX<QuizController>(
-                        builder: (controller) {
-                          if (controller.onclickj.value) {
-                            return icon;
-                          } else {
-                            return Container();
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz3 extends StatelessWidget {
-  const WidgetSubSoal1Quiz3({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar =
-        "d. Banyak remaja di Indonesia yang bentuk komunitas cosplay karena mengemari game dan anime dari jepang";
-    Map<String, dynamic> quiz = {
-      "pertanyaan":
-          "Contoh perubahan sosial yang disebabkan oleh masuknya kebudayaan masyarakat lain ditunjukkan oleh pilihan….",
-      "jawaban": [
-        "a. Warga dusun Sukaramai melakukan pemilihan kepala desa baru periode 2020-2025",
-        "b. Peternak di Lembang mengembangkan biogas sebagai pengganti gas elpiji sehingga menghemat pengeluaran untuk membeli gas",
-        "c. Aktivitas masyarakat di Jakarta lumpuh akibat cuaca ekstrem dan banjir bandang",
-        "d. Banyak remaja di Indonesia yang bentuk komunitas cosplay karena mengemari game dan anime dari jepang",
-        "e. Pertentangan antarsuku menyebabkan kekacauan sehingga warga perlu dievakuasi demi keamanan"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            padding: EdgeInsets.only(top: 8),
-            itemCount: quiz['jawaban'].length,
-            itemBuilder: (context, index) {
-              String answer = quiz['jawaban'][index];
-              String jawabannya = jawabanBenar;
-              var icon = jawabannya == answer
-                  ? Image.asset(
-                      "assets/kuis/btn-24.png",
-                      height: 16,
-                      width: 16,
-                    )
-                  : Image.asset(
-                      "assets/button/btn-05.png",
-                      height: 16,
-                      width: 16,
-                    );
-              return Padding(
-                padding: const EdgeInsets.only(left: 20, bottom: 2),
-                child: GestureDetector(
-                  onTap: () => controller.klikjawab(answer, jawabanBenar),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        flex: 4,
-                        child: Text(
-                          answer,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      GetX<QuizController>(
-                        builder: (controller) {
-                          if (controller.onclickj.value) {
-                            return icon;
-                          } else {
-                            return Container();
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz4 extends StatelessWidget {
-  const WidgetSubSoal1Quiz4({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar = "e. 3),4), dan 5)";
-    Map<String, dynamic> quiz = {
-      "pertanyaan": """Perhatikan beberapa peryataan berikut!
-1) Penemuan situs purbakala mengemparkan seluruh warga
-2) Pembangunan jembatan laying tidak berjalan sesuai dengan rencana
-3) Inflansi menyebabkan pemutusan hubungan kerja secara bersama sama 
-4) Bencana alam menyebabkan perubahan structural masyarakat
-5) Lembaga pelatihan kerja berperan mengurangi jumlah pengganguran dalam masyarakat 
-Contoh perubahan sosial dalam masyarakat ditunjukkan oleh angka….""",
+      "pertanyaan": """Perhatikan pernyataan berikut!
+1) Proses perubahan membutuhkan waktu cukup lama
+2) Terdapat tujuan yang ingin dicapai dalam perubahan
+3) Terdapat keinginan masyarakat melakukan perubahan
+4) Terdapat momentum yang tepat untuk memulai gerakan perubahan 
+Bentuk perubahan sosial berdasarkan ciri ciri tersebut adalah perubahan…. """,
       "jawabanbenar": "e. 1, 2 dan 5",
       "jawaban": [
-        "a. 1),2), dan 3)",
-        "b. 1),2), dan 4)",
-        "c. 1),3), dan 5)",
-        "d. 2),4), dan 5)",
-        "e. 3),4), dan 5)"
+        "a. Tidak direncanakan",
+        "b. Direncanakan",
+        "c. Revolusi",
+        "d. Evolusi",
+        "e. Kecil"
       ]
     };
     String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
@@ -512,22 +163,138 @@ Contoh perubahan sosial dalam masyarakat ditunjukkan oleh angka….""",
   }
 }
 
-class WidgetSubSoal1Quiz5 extends StatelessWidget {
-  const WidgetSubSoal1Quiz5({Key key}) : super(key: key);
+class WidgetSubSoal2Quiz2 extends StatelessWidget {
+  const WidgetSubSoal2Quiz2({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     QuizController controller = Get.find();
-    String jawabanBenar = "d. Difusi";
+    String jawabanBenar =
+        "e. Gaya hijab wanita muslim selalu mengalami perubahan.";
     Map<String, dynamic> quiz = {
-      "pertanyaan": """Perhatikan gambar berikut!""",
-      "jawabanbenar": "d. Difusi",
+      "pertanyaan":
+          "Pernyataan berikut yang menunjukkan contoh perubahan kecil yaitu….",
       "jawaban": [
-        "a. Akomodasi",
-        "b. Asimilasi",
-        "c. Akulturasi",
-        "d. Difusi",
-        "e. Sosialisasi"
+        "a. Kemajuan ilmu pengetahuan berpengaruh terhadap perkembangan peradaban manusia",
+        "b. Krisis ekonomi menyebabkan pemutusan hubungan kerja secara besar besaran",
+        "c. Peperangan antarnegara menyebabkan terjadinya perubahan struktur sosial",
+        "d. Bencana banjir menyebabkan perubahan kehidupan masyarakat Sentari",
+        "e. Gaya hijab wanita muslim selalu mengalami perubahan.",
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            padding: EdgeInsets.only(top: 8),
+            itemCount: quiz['jawaban'].length,
+            itemBuilder: (context, index) {
+              String answer = quiz['jawaban'][index];
+              String jawabannya = jawabanBenar;
+              var icon = jawabannya == answer
+                  ? Image.asset(
+                      "assets/kuis/btn-24.png",
+                      height: 16,
+                      width: 16,
+                    )
+                  : Image.asset(
+                      "assets/button/btn-05.png",
+                      height: 16,
+                      width: 16,
+                    );
+              return Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 4),
+                child: GestureDetector(
+                  onTap: () => controller.klikjawab(answer, jawabanBenar),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          answer,
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      GetX<QuizController>(
+                        builder: (controller) {
+                          if (controller.onclickj.value) {
+                            return icon;
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz3 extends StatelessWidget {
+  const WidgetSubSoal2Quiz3({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "b. Tidak direncanakan";
+    Map<String, dynamic> quiz = {
+      "pertanyaan": """Perhatikan fenomena berikut!""",
+      "jawabanbenar": "b. Tidak direncanakan",
+      "jawaban": [
+        "a. Yang direncanakan",
+        "b. Tidak direncanakan",
+        "c. Regres",
+        "d. Proses",
+        "e. Progres"
       ]
     };
     String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
@@ -565,11 +332,11 @@ class WidgetSubSoal1Quiz5 extends StatelessWidget {
                       ),
                       Align(
                         alignment: Alignment.center,
-                        child: Image.asset("assets/images/subQuiz1Image1.png",
+                        child: Image.asset("assets/images/subquiz2-1.png",
                             height: Get.height * .5, width: Get.width * .5),
                       ),
                       Text(
-                        "Penemuan baru yang menyebar ke segala arah. Contoh: Penemuan pesawat radio dapat menyebabkan perubahan-perubahan di bidang lain seperti pendidikan, pemerintahan, pertanian, perekonomian dan jasa. Gambar tersebut di atas dipengaruhi proses …. ",
+                        "berdasarkan prosesnya, fenomena pada gambar dapat dikategorikan dalam bentuk perubahan",
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -635,22 +402,22 @@ class WidgetSubSoal1Quiz5 extends StatelessWidget {
   }
 }
 
-class WidgetSubSoal1Quiz6 extends StatelessWidget {
-  const WidgetSubSoal1Quiz6({Key key}) : super(key: key);
+class WidgetSubSoal2Quiz4 extends StatelessWidget {
+  const WidgetSubSoal2Quiz4({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     QuizController controller = Get.find();
-    String jawabanBenar = "a. X1), X2), dan Y3)";
+    String jawabanBenar = "d. Y1), X2), dan X3)";
     Map<String, dynamic> quiz = {
-      "pertanyaan": """Perhatikan tabel berikut!""",
-      "jawabanbenar": "a. X1), X2), dan Y3)",
+      "pertanyaan": """Perhatikan fenomena berikut!""",
+      "jawabanbenar": "d. Y1), X2), dan X3)",
       "jawaban": [
         "a. X1), X2), dan Y3)",
-        "b. X2), Y2), dan Y3)",
+        "b. X1), Y2), dan Y3)",
         "c. Y1), Y2), dan X3)",
-        "d. Y1), X1), dan X3)",
-        "e. Y2), X2), dan X3)"
+        "d. Y1), X2), dan X3)",
+        "e. X2), Y2), dan Y3)"
       ]
     };
     String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
@@ -699,7 +466,7 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
                         },
                         children: [
                           TableRow(children: [
-                            Container(width: 16),
+                            Container(),
                             Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Text('X'.toUpperCase(),
@@ -727,14 +494,16 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Adat istiadat yang sulit diubah",
+                              child: Text(
+                                  "Menyempurnakan perubahan yang sudah ada.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Mudahnya menerima hal hal baru",
+                              child: Text(
+                                  "Berakibat besar pada berbagai bidang kehidupan.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -751,14 +520,15 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
-                                  "Cenderung terbuka terhadap budaya lain",
+                                  "Menyebabkan perubahan system dan aspek-aspek dalam masyarakat.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Perkembangan iptek terhambat",
+                              child: Text(
+                                  "Berdampak pada bidang tertentu-tertentu saja.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -774,14 +544,15 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Penduduk cenderung heterogen",
+                              child: Text("Perubahan tidak bersifat mendasar.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Prasangka terhadap kebudayaan baru",
+                              child: Text(
+                                  "Perubahan bersifat mendasar  dalam kehidupan masyarakat",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -792,7 +563,7 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
                       Align(
                         alignment: Alignment.topLeft,
                         child: Text(
-                          "Faktor penghambat perubahan sosial ditunjukkan oleh kombinasi…..",
+                          "Ciri-ciri yang menunjukkan perubahan structural ditunjukkan oleh kombinasi….",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -859,352 +630,22 @@ class WidgetSubSoal1Quiz6 extends StatelessWidget {
   }
 }
 
-class WidgetSubSoal1Quiz7 extends StatelessWidget {
-  const WidgetSubSoal1Quiz7({Key key}) : super(key: key);
+class WidgetSubSoal2Quiz5 extends StatelessWidget {
+  const WidgetSubSoal2Quiz5({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     QuizController controller = Get.find();
-    String jawabanBenar = "a. 1, 2, dan 3";
+    String jawabanBenar = "e. Terencana";
     Map<String, dynamic> quiz = {
       "pertanyaan":
-          """Faktor – faktor penyebab perubahan sosial masyarakat sebagai berikut!.
-1) Masyarakat mengungsi akibat banjir
-2) Masuknya pengarup kebudayaan lain melalui media massa
-3) Perang antar negara yang memperebutkan wilayah perbatasan
-4) Perselisihan antar pendukung partai politik dalam pemilihan kepala daerah.
-5) Meningkatnya jumlah penduduk Indonesia terutama di pulau jawa
-Faktor perubahan sosial yang bersifat eksternal adalah ....""",
-      "jawabanbenar": "e. 1, 2 dan 5",
+          "Meningkatkan sumber daya manusia dengan member kesempatan memperoleh pendidikan, tugas belajar, peningkatan biaya atau anggaran pendidikan, peningkatan standar mutu pendidikan dan peningkatan daya saing bangsa secara internal dan global adalah contoh perubahan ...",
       "jawaban": [
-        "a. 1, 2, dan 3",
-        "b. 1, 2, dan 4",
-        "c. 1, 3, dan 5",
-        "d. 2, 4, dan 5",
-        "e. 3, 4, dan 5"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0, top: 8),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][0],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][1],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][2],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][3],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][4],
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz8 extends StatelessWidget {
-  const WidgetSubSoal1Quiz8({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar = "e. Penemuan baru";
-    Map<String, dynamic> quiz = {
-      "pertanyaan":
-          """Adanya krisis bahan bakar minyak mendorong masyarakat untuk melakukan terobosan-terobosan baru dengan mengupayakan bahan bakar minyak diganti dengan Bio gas (kotoran-kotoran ternak) yang digunakan sebagai bahan bakar memasak. Faktor penyebab perubahan pada wacana tersebut dipengaruhi oleh …""",
-      "jawabanbenar": "e. 1, 2 dan 5",
-      "jawaban": [
-        "a. Masalah-masalah sosial",
-        "b. Konflik sosial",
-        "c. Tuntutan ekonomi",
-        "d. Alih teknologi",
-        "e. Penemuan baru"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0, top: 8),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][0],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][1],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][2],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][3],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][4],
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz9 extends StatelessWidget {
-  const WidgetSubSoal1Quiz9({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar = "d. 2, 4, dan 5";
-    Map<String, dynamic> quiz = {
-      "pertanyaan": """Perhatikan pernyataan berikut ini!.
-1) Fanatik berlebihan pada ideologinya
-2) Kemiskinan struktural pada masyarakat
-3) Pengadaan mobil perpustakaan keliling
-4) Penyediaan beasiswa pendidikan keluar negeri
-5) Mendirikan sekolah non formai berupa rumah singgah
-Dari pernyataan tersebut diatas yang termasuk faktor pendorong perubahan sosial adalah""",
-      "jawabanbenar": "a. Masalah-masalah sosial",
-      "jawaban": [
-        "a. 1, 2, dan 3",
-        "b. 1. 2. dan 4",
-        "c. 1, 3, dan 5",
-        "d. 2, 4, dan 5",
-        "e. 3, 4, dan 5"
-      ]
-    };
-    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "$numberQuiz.",
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 16),
-                  child: Text(
-                    quiz['pertanyaan'],
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ),
-              )
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0, top: 8),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][0],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][1],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][2],
-                    ),
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][3],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    WidgetAnswer(
-                      quiz: quiz,
-                      jawabanBenar: jawabanBenar,
-                      answer: quiz['jawaban'][4],
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class WidgetSubSoal1Quiz10 extends StatelessWidget {
-  const WidgetSubSoal1Quiz10({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    QuizController controller = Get.find();
-    String jawabanBenar =
-        "d. Perubahan dianggap sebagai penyimpangan terhadap nilai dan norma sosial";
-    Map<String, dynamic> quiz = {
-      "pertanyaan":
-          "Pada zaman modern masih terdapat masyarakat yang bersikap kolot dan menentang modernitas. Kehidupan masyarakat menjadi sulit berkembang. Akibatnya, perubahan sosial sulit terjadi dalam masyarakat, kondisi tersebut disebabkan….",
-      "jawaban": [
-        "a. Hubungan sosial dengan masyarakat lain bersifat tertutup",
-        "b. Masyarakat memiliki toleransi tinggi terhadap perilaku menyimpang",
-        "c. Masyarakat selalu tidak puas terhadap bidang-bidang kehidupannya",
-        "d. Perubahan dianggap sebagai penyimpangan terhadap nilai dan norma sosial",
-        "e. Adat istiadat masyarakat berkembang dengan baik dan mengikat anggotanya."
+        "a. Progresif",
+        "b. Manifest",
+        "c. Laten",
+        "d. Disengaja",
+        "e. Terencana"
       ]
     };
     String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
@@ -1297,6 +738,572 @@ class WidgetSubSoal1Quiz10 extends StatelessWidget {
                 ),
               );
             },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz6 extends StatelessWidget {
+  const WidgetSubSoal2Quiz6({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "b. Revolusi sosial";
+    Map<String, dynamic> quiz = {
+      "pertanyaan":
+          "Suatu proses perubahan dalam masyarakat yang berlangsung cepat disebut ...",
+      "jawaban": [
+        "a. Rekayasa sosial",
+        "b. Revolusi sosial",
+        "c. Gerakan sosial",
+        "d. Perencanaan sosial",
+        "e. Gebrakan sosial"
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            padding: EdgeInsets.only(top: 8),
+            itemCount: quiz['jawaban'].length,
+            itemBuilder: (context, index) {
+              String answer = quiz['jawaban'][index];
+              String jawabannya = jawabanBenar;
+              var icon = jawabannya == answer
+                  ? Image.asset(
+                      "assets/kuis/btn-24.png",
+                      height: 16,
+                      width: 16,
+                    )
+                  : Image.asset(
+                      "assets/button/btn-05.png",
+                      height: 16,
+                      width: 16,
+                    );
+              return Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 4),
+                child: GestureDetector(
+                  onTap: () => controller.klikjawab(answer, jawabanBenar),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          answer,
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      GetX<QuizController>(
+                        builder: (controller) {
+                          if (controller.onclickj.value) {
+                            return icon;
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz7 extends StatelessWidget {
+  const WidgetSubSoal2Quiz7({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "e. Cukup lama";
+    Map<String, dynamic> quiz = {
+      "pertanyaan":
+          "Masyarakat dikatakan mengalami perubahan apabila terjadi ketidaksamaan antara keadaan dimasa lampau dengan masa sekarang dalam waktu yang ...",
+      "jawaban": [
+        "a. Relative cepat",
+        "b. Sangat cepat",
+        "c. Gerakan sosial",
+        "d. Secara bertahap",
+        "e. Cukup lama"
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            padding: EdgeInsets.only(top: 8),
+            itemCount: quiz['jawaban'].length,
+            itemBuilder: (context, index) {
+              String answer = quiz['jawaban'][index];
+              String jawabannya = jawabanBenar;
+              var icon = jawabannya == answer
+                  ? Image.asset(
+                      "assets/kuis/btn-24.png",
+                      height: 16,
+                      width: 16,
+                    )
+                  : Image.asset(
+                      "assets/button/btn-05.png",
+                      height: 16,
+                      width: 16,
+                    );
+              return Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 4),
+                child: GestureDetector(
+                  onTap: () => controller.klikjawab(answer, jawabanBenar),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          answer,
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      GetX<QuizController>(
+                        builder: (controller) {
+                          if (controller.onclickj.value) {
+                            return icon;
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz8 extends StatelessWidget {
+  const WidgetSubSoal2Quiz8({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "e. 3), 4), dan 5)";
+    Map<String, dynamic> quiz = {
+      "pertanyaan": """Perhatikan pernyataan berikut!
+1) System pertukaran pelajar antarnegara dapat memajukan pendidikan Indonesia
+2) Pembangunan jalan tol tidak berjalan sesuai target waktu yang ditentukan
+3) Kemiskinan dikota besar meningkat karena naiknya harga bahan pokok
+4) Pencemaran lingkungan teerjadi karena pembuangan limbah pabrik kesungai
+5) Kebakaran hutan terjadi akibat ketidakpedulian manusia terhadap lingkungan.
+Perubahan sosial tidak direncanakan ditunjukkan oleh angka…""",
+      "jawabanbenar": "e. 1, 2 dan 5",
+      "jawaban": [
+        "a. 1), 2), dan 3)",
+        "b. 1), 2), dan 4)",
+        "c. 1), 3), dan 5)",
+        "d. 2), 4), dan 5)",
+        "e. 3), 4), dan 5)"
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 8),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][0],
+                    ),
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][1],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 4),
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][2],
+                    ),
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][3],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 4),
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][4],
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz9 extends StatelessWidget {
+  const WidgetSubSoal2Quiz9({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "c. Menyebabkan perubahan sistem nasional";
+    Map<String, dynamic> quiz = {
+      "pertanyaan":
+          "Setiap lima tahun sekali, Indonesia memilih pemimpin negara melalui pemilu. Pergantian pemimpin setelah pelaksanaan pemilu dapat memengaruhi penyelenggaraan pemerintahan. Dengan demikian, pelaksanaan pemilu dapat menjadi salah satu faktor penyebab perubahan structural karena…",
+      "jawaban": [
+        "a. Memengaruhi bidang kehidupan manusia yang paling kecil",
+        "b. Mengakibatkan perubahan terjadi secara lambat dan bertahap sesuai arahnya",
+        "c. Menyebabkan perubahan sistem nasional",
+        "d. Memengaruhi kemajuan suatu negara",
+        "e. Terjadi dalam momentum yang tepat."
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            padding: EdgeInsets.only(top: 8),
+            itemCount: quiz['jawaban'].length,
+            itemBuilder: (context, index) {
+              String answer = quiz['jawaban'][index];
+              String jawabannya = jawabanBenar;
+              var icon = jawabannya == answer
+                  ? Image.asset(
+                      "assets/kuis/btn-24.png",
+                      height: 16,
+                      width: 16,
+                    )
+                  : Image.asset(
+                      "assets/button/btn-05.png",
+                      height: 16,
+                      width: 16,
+                    );
+              return Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 4),
+                child: GestureDetector(
+                  onTap: () => controller.klikjawab(answer, jawabanBenar),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          answer,
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      GetX<QuizController>(
+                        builder: (controller) {
+                          if (controller.onclickj.value) {
+                            return icon;
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WidgetSubSoal2Quiz10 extends StatelessWidget {
+  const WidgetSubSoal2Quiz10({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    QuizController controller = Get.find();
+    String jawabanBenar = "d. 2 dan 4";
+    Map<String, dynamic> quiz = {
+      "pertanyaan": """10. Beberapa contoh fenomena sosial sebagai berikut!.
+1) Pembangunan listrik masuk desa mendorong industri kecil
+2) PHK menyebabkan pengangguran meningkat dengan pesat
+3) Pembangunan jalan raya didaerah terpencil sesuai dengan anggaran
+4) Penggunaan mesin pertanian memicu berkembangnya sikap individualis
+Dari contoh tersebut yang termasuk perubahan yang tidak dikehendaki adalah ...""",
+      "jawabanbenar": "e. 1, 2 dan 5",
+      "jawaban": [
+        "a. 1 dan 2",
+        "b. 1 dan 3",
+        "c. 2 dan 3",
+        "d. 2 dan 4",
+        "e. 3 dan 4"
+      ]
+    };
+    String numberQuiz = (controller.numberQuiz.toInt() + 1).toString();
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                "$numberQuiz.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0, right: 16),
+                  child: Text(
+                    quiz['pertanyaan'],
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              )
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 8),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][0],
+                    ),
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][1],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 4),
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][2],
+                    ),
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][3],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 4),
+                Row(
+                  children: [
+                    WidgetAnswer(
+                      quiz: quiz,
+                      jawabanBenar: jawabanBenar,
+                      answer: quiz['jawaban'][4],
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ],
       ),

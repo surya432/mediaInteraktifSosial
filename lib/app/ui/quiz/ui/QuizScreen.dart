@@ -48,16 +48,14 @@ class QuizScreen extends StatelessWidget {
                     children: [
                       Expanded(
                           child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/DAMPAKPOSITIFPERUBAHANSOSIAL"),
+                        onTap: () => Get.toNamed("/QuizSub3"),
                         child: Image.asset("assets/kuis/headtitle-63.png",
                             height: context.height * .1,
                             width: context.width * .3),
                       )),
                       Expanded(
                           child: GestureDetector(
-                        onTap: () =>
-                            Get.toNamed("/DAMPAKNEGATIFPERUBAHANSOSIAL"),
+                        onTap: () => Get.toNamed("/QuizSub4"),
                         child: Image.asset("assets/kuis/headtitle-64.png",
                             height: context.height * .1,
                             width: context.width * .3),

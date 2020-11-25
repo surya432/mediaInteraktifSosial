@@ -177,10 +177,10 @@ class PerubahanSosialController extends GetxController {
         "route": WidgetAgenPerubahanSosial1(),
         "images": "assets/slide/headtitle-47.png"
       },
-      {
-        "route": WidgetAgenPerubahanSosial2(),
-        "images": "assets/slide/headtitle-47.png"
-      },
+      // {
+      //   "route": WidgetAgenPerubahanSosial2(),
+      //   "images": "assets/slide/headtitle-47.png"
+      // },
     ]);
   }
 

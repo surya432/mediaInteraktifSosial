@@ -110,7 +110,16 @@ class WidgetAgenPerubahanSosial1 extends StatelessWidget {
                 fontFamily: "Gothic",
               ),
               textAlign: TextAlign.left,
-            )
+            ),
+            Text(
+              "Agen perubahan sosial cenderung memegang kendali perencanaan, pelaksanaan, dan evaluasi perubahan sosial yang dikehendaki. Melalui perubahan sosial yang dikehendaki, kehidupan masyarakat menjadi lebih maju dan kesejahteraan masyarakat meningkat.",
+              style: TextStyle(
+                //fontSize: 16,
+                color: Colors.white,
+                fontFamily: "Gothic",
+              ),
+              textAlign: TextAlign.justify,
+            ),
           ],
         ),
       ),
