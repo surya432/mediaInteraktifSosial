@@ -153,8 +153,7 @@ class WidgetSubSoal3Quiz1 extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                  "Berakibat besar pada berbagai bidang kehidupan.",
+                              child: Text("Kesenjangan meningkat.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -170,8 +169,7 @@ class WidgetSubSoal3Quiz1 extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                  "Menyebabkan perubahan system dan aspek-aspek dalam masyarakat.",
+                              child: Text("Munculnya marginalisasi. ",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -179,7 +177,7 @@ class WidgetSubSoal3Quiz1 extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
-                                  "Berdampak pada bidang tertentu-tertentu saja.",
+                                  "Ilmu pengetahuan dan teknologi berkembang.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
@@ -195,15 +193,15 @@ class WidgetSubSoal3Quiz1 extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Perubahan tidak bersifat mendasar.",
+                              child: Text(
+                                  "Efisiensi dalam kehidupan masyarakat.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                  "Perubahan bersifat mendasar  dalam kehidupan masyarakat",
+                              child: Text("Kesenjangan budaya semakin melebar.",
                                   style: TextStyle(
                                       fontFamily: "Gothic",
                                       color: Colors.white)),

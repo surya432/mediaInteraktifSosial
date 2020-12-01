@@ -408,10 +408,10 @@ class WidgetSubSoal2Quiz4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuizController controller = Get.find();
-    String jawabanBenar = "d. Y1), X2), dan X3)";
+    String jawabanBenar = "e. X2), Y2), dan Y3)";
     Map<String, dynamic> quiz = {
       "pertanyaan": """Perhatikan fenomena berikut!""",
-      "jawabanbenar": "d. Y1), X2), dan X3)",
+      "jawabanbenar": "e. X2), Y2), dan Y3)",
       "jawaban": [
         "a. X1), X2), dan Y3)",
         "b. X1), Y2), dan Y3)",

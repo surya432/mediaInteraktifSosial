@@ -214,6 +214,7 @@ class QuizController extends GetxController {
       {"route": WidgetQuizHarian7(), "images": "assets/kuis/headtitle-17.png"},
       {"route": WidgetQuizHarian8(), "images": "assets/kuis/headtitle-17.png"},
       {"route": WidgetQuizHarian9(), "images": "assets/kuis/headtitle-17.png"},
+      {"route": WidgetQuizHarian10(), "images": "assets/kuis/headtitle-17.png"},
       {"route": WidgetQuizHarian11(), "images": "assets/kuis/headtitle-17.png"},
       {"route": WidgetQuizHarian12(), "images": "assets/kuis/headtitle-17.png"},
       {"route": WidgetQuizHarian13(), "images": "assets/kuis/headtitle-17.png"},
