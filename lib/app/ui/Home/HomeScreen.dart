@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
       onWillPop: _onWillPop,
       child: Scaffold(
         body: BGContainerWidget(
-          defaultImages: "assets/images/BG02-01.jpg",
+          defaultImages: "assets/images/BG02-01-rev.jpg",
           custombar: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,7 +61,7 @@ class HomeScreen extends StatelessWidget {
           content: Container(
             // color: Colors.grey[700],
             height: context.isTablet ? Get.height * .8 : Get.height * .75,
-            width: context.isTablet ? Get.width * .78 : Get.width * .75,
+            width: context.isTablet ? Get.width * .78 : Get.width * .8,
             child: Stack(
               fit: StackFit.loose,
               children: [
@@ -70,8 +70,9 @@ class HomeScreen extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: Image.asset(
-                    "assets/images/title.png",
-                    height: Get.height * .17,
+                    "assets/images/title-rev.png",
+                    height: Get.height * .2,
+                    width: Get.width *.25,
                   ),
                 ),
                 Positioned(

@@ -114,6 +114,18 @@ class WidgetFaktorPendorong1 extends StatelessWidget {
               child: Image.asset("assets/images/faktorpendorong1.png",
                   height: Get.height * .5, width: Get.width * .5),
             ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: agenponsel.com",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
             Text(
               "“Maraknya penggunaan tongsis, tren global dalam berfoto di media sosial”",
               style: TextStyle(
@@ -249,6 +261,18 @@ class WidgetFaktorPendorong4 extends StatelessWidget {
               child: Image.asset("assets/images/faktor-pendorong2.png",
                   height: Get.height * .5, width: Get.width * .5),
             ),
+            Align(
+              child: Text(
+                "Sumber:  infopublik.id",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
+              alignment: Alignment.center,
+            ),
             Text(
               "“Pemberian piagam, Piala dan Hadiah pada pemenang lomba”",
               style: TextStyle(
@@ -294,6 +318,18 @@ class WidgetFaktorPendorong5 extends StatelessWidget {
               alignment: Alignment.center,
               child: Image.asset("assets/images/faktor-pendorong2.png",
                   height: Get.height * .5, width: Get.width * .5),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: qerja.com",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
             ),
             Text(
               "“Job seeker di Job fair yang diadakan oleh pemerintah maupun lembaga swasta”",

@@ -120,6 +120,18 @@ class WidgetFaktorInternalPerubahanSosial1 extends StatelessWidget {
                   height: Get.height * .5,
                   width: Get.width * .5),
             ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: republika.co.id",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.justify,
+              ),
+            ),
             Text(
               "Sulitnya mendapatkan air di daerah pegunungan, masyarakat menciptakan tempat penampungan dan mengalirkan dengan selang kerumah warga.",
               style: TextStyle(
@@ -207,6 +219,18 @@ class WidgetFaktorInternalPerubahanSosial3 extends StatelessWidget {
                   height: Get.height * .5,
                   width: Get.width * .5),
             ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: fin.co.id",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.justify,
+              ),
+            ),
             SizedBox(height: 16),
             Align(
               alignment: Alignment.center,
@@ -214,6 +238,18 @@ class WidgetFaktorInternalPerubahanSosial3 extends StatelessWidget {
                   "assets/images/faktorInternalperubahanSosial3.jpg",
                   height: Get.height * .5,
                   width: Get.width * .5),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: detik.com",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.justify,
+              ),
             ),
             Text(
               "Konflik penolakan RUU Omnibus Law merupakan interaksi sosial yang menjadi penyebab terjadinya perubahan sosial. Konflik atau pertentangan biasa terjadi antar individu dengan kelompok, maupun kelompok dengan kelompok. ",

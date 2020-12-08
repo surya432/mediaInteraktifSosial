@@ -148,6 +148,18 @@ class WidgetProsesnyaPerubahanSosial2 extends StatelessWidget {
               child: Image.asset("assets/images/ProsesnyaPerubahanSosial1.png",
                   height: Get.height * .5, width: Get.width * .5),
             ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: CNN Indonesia",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
             Text(
               "Kebakaran, menyebabkan beragam perubahan dalam kehidupan masyarakat. Kebakaran merupakan perubahan yang terjadi tanpa perencanaan yang terjadi diluar perkiraan masyarakat. Perubahan ini cenderung berdampak negatif dikarenakan perubahaanya tidak dikehendaki masyarakat. ",
               style: TextStyle(

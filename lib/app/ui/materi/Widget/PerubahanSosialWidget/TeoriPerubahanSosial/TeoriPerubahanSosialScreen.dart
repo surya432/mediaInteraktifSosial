@@ -118,6 +118,18 @@ class WidgetTeoriPerubahanSosial1 extends StatelessWidget {
               child: Image.asset("assets/images/teoripenghambat1.png",
                   height: Get.height * .5, width: Get.width * .5),
             ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: ruangguru.com",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
           ],
         ),
       ),
@@ -242,6 +254,18 @@ class WidgetTeoriPerubahanSosial4 extends StatelessWidget {
               alignment: Alignment.center,
               child: Image.asset("assets/images/teoripenghambat2.png",
                   height: Get.height * .5, width: Get.width * .5),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Sumber: ruangguru.com",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.justify,
+              ),
             ),
           ],
         ),

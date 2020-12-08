@@ -120,6 +120,18 @@ class WidgetFaktorPenghambat1 extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.center,
+              child: Text(
+                "Sumber: Liputan6",
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontFamily: "Gothic",
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Align(
+              alignment: Alignment.center,
               child: Text("“Tradisi berjalan tanpa alas kaki suku Baduy”",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontFamily: "Gothic", color: Colors.white)),
